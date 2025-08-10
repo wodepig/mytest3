@@ -1,0 +1,3999 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no" />
+    <title>首页 - 中国网络经纪人</title>
+        <style>
+        body {
+            background-color: #f5f5f7 !important;
+        }
+
+        .main-app-layout {
+            display: flex;
+            flex: auto;
+            flex-direction: column;
+            min-height: 0;
+            background: #f5f5f7;
+        }
+
+        .main-app-layout,
+        .main-app-layout  > * {
+            box-sizing: border-box;
+        }
+
+        .main-app-layout-content {
+            flex: auto;
+            min-height: 0;
+        }
+
+        .main-app-layout .main-app-layout-has-sider {
+            margin-top: 8px;
+        }
+
+        .main-app-layout.main-app-layout-has-sider {
+            flex-direction: row;
+        }
+
+        .main-app-layout-sider-children {
+            height: 100%;
+            margin-top: -0.1px;
+            padding-top: 0.1px;
+        }
+
+        .main-app-layout .main-app-layout-has-sider .main-app-layout.threenets-layout {
+            margin-left: 334px;
+        }
+
+        .main-app-layout .threenets-content {
+            width: 100% !important;
+            background-color: #fff;
+            min-height: calc(100vh - 208px);
+            position: relative;
+        }
+
+        .main-app-layout .main-app-layout-has-sider .threenets-content {
+            border-radius: 8px;
+            box-shadow: 0 0 8px 0 rgb(0 0 0 / 4%);
+            overflow: hidden;
+        }
+
+        .main-app-layout .main-app-layout-has-sider .threenets-content,
+        .main-app-layout.threenets-layout footer {
+            width: 1020px !important;
+            min-width: 1020px;
+            margin-right: auto;
+            /* transform 影响内容区弹窗 */
+            /* transform: translateX(-169px); */
+            /* 844 = 334 + 1020 / 2 */
+            margin-left: calc(50vw - 844px);
+        }
+
+        .main-app-layout.main-app-layout-has-sider > .main-app-layout,
+        .main-app-layout.main-app-layout-has-sider > .main-app-layout-content {
+            width: 0;
+        }
+
+        @media (max-width: 1708px) {
+            .main-app-layout.threenets-layout {
+                margin-left: 334px !important;
+            }
+            .main-app-layout .main-app-layout-has-sider .threenets-content,
+            .main-app-layout.threenets-layout footer {
+                margin-left: auto;
+                margin-right: auto;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 1365px) {
+            .main-app-layout.threenets-layout {
+                margin-left: 245px !important;
+            }
+            .main-app-layout .main-app-layout-has-sider .threenets-content,
+            .main-app-layout.threenets-layout footer {
+                margin-left: auto;
+                margin-right: auto;
+                transform: none;
+            }
+        }
+    </style>
+            <link rel="stylesheet" rev="stylesheet" href="//wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/110e3ccdca40dd8589d9301456f582d4_icon.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="//pages.anjukestatic.com/kfstouch/icons/Fonts-PC-Broker/20191115001/iconfont.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="//pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.css" type="text/css" />
+<link rel="stylesheet" rev="stylesheet" href="https://include.anjukestatic.com/broker-vip/res/10384/b/Broker_HomeV2.css" type="text/css" />
+    
+
+<script type="text/javascript"  src="https://j1.58cdn.com.cn/resource/xxzl/captcha/js/isd_captcha.js?time=202508022301"></script>
+<script type="text/javascript" crossorigin src="https://include.anjukestatic.com/broker-vip/res/10384/s/page/APF.js"></script>
+    <script src="//j1.58cdn.com.cn/beidou-sdk/browser/bundle.min_v20220704152428.js?from=ajkbroker"></script>
+    <link rel="icon" href="https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/191e2bef42bdc602e6414f4f2456828e_48-48.ico" type="image/ico" />
+    <link rel="shortcut icon" href="https://wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/191e2bef42bdc602e6414f4f2456828e_48-48.ico" />
+    <link rel="stylesheet" href="//wos2.58cdn.com.cn/DeFazYxWvDti/frsupload/a52ee0e82b9e8276c3b6af9db8d6b5ae_iconbroker.css?id=6273748c1167ee4e26ed88e9?name=三网Web-icon" />
+    <script type="text/javascript" crossorigin src="//pages.anjukestatic.com/fe/esf/img/d70120a9/ResizeObserver.global.1.5.1.min.js"></script>
+    <script type="text/javascript" crossorigin src="//pages.anjukestatic.com/fe/esf/img/e762dbce/localforage.1.10.0.min.js"></script>
+</head>
+<body>
+
+<!--[if lte IE 8]>
+<div class="lte-ie8-tips">
+	<span class="close-button iconfont icon-f">&#xe001;</span>
+	<p class="count-down">倒计时：<span>10s</span></p>
+	<div class="lte-ie8-title">
+		<img src="//pages.anjukestatic.com/img/broker/browser-icon/alert.png" alt="alert">
+		您当前的浏览器版本过低！
+	</div>
+	<div class="lte-ie8-detail">
+		<p>可能存在安全风险，建议升级您的浏览器！</p>
+	</div>
+	<div class="lte-ie8-recommand">
+		<p>官方推荐浏览器:</p>
+		<p class="info">（请点击以下图标进行下载升级）</p>
+		<div class="lte-browser-container">
+			<a data-type="1" href="//pc.qq.com/detail/1/detail_2661.html" target="_blank" _soj="lte_chrome_download">
+				<img src="//pages.anjukestatic.com/img/broker/browser-icon/chrome.png" alt="chrome">
+				<p>谷歌</p>
+			</a>
+			<a data-type="2" href="//www.firefox.com.cn/" target="_blank"  _soj="lte_firefox_download">
+				<img src="//pages.anjukestatic.com/img/broker/browser-icon/firefox.png" alt="firefox">
+				<p>火狐</p>
+			</a>
+			<a data-type="3" href="//browser.360.cn/se/" target="_blank" _soj="lte_ie_download">
+				<img src="//pages.anjukestatic.com/img/broker/browser-icon/360.png" alt="360">
+				<p>360</p>
+			</a>
+                        <a data-type="4" href="//pc.qq.com/detail/2/detail_26342.html" target="_blank" _soj="lte_ie_download">
+                <img src="//pages.anjukestatic.com/img/broker/browser-icon/ie.png" alt="IE9">
+                <p>Edge及以上</p>
+            </a>
+            		</div>
+	</div>
+</div>
+
+
+<div class="reason-feedback-box">
+    <p class="reason-feedback-title">低版本浏览器问卷调查</p>
+
+    <div class="question-part">
+        <p><i>*</i>请选择未升级浏览器的原因：<span class="error-msg">该项必填哦~</span></p>
+        <label><input type="radio" name="abandon_reason" value="3" autocomplete="off">
+            <span>我不想升级（提示：会出现严重盗号现象和跨域攻击等安全隐患；兼容性差，部分功能无法使用，例如多图上传、视频上传、浏览器频繁崩溃等）</span>
+        </label><br>
+        <label class="company-reason"><input type="radio" name="abandon_reason" value="1" autocomplete="off">我不能升级：公司IT统一控制，我无法自行操作</label><br>
+        <div class="unclear-reason">
+            <label><input type="radio" name="abandon_reason" value="2" autocomplete="off">我不会升级（点击下方logo，可直接跳转到下载页面）</label><br>
+            <div class="reason-browser-container">
+                <a data-type="1" href="//pc.qq.com/detail/1/detail_2661.html" target="_blank" _soj="lte_chrome_download">
+                    <img src="//pages.anjukestatic.com/img/broker/browser-icon/chrome.png" alt="chrome">
+                    <p>谷歌</p>
+                </a>
+                <a data-type="2" href="//www.firefox.com.cn/" target="_blank"  _soj="lte_firefox_download">
+                    <img src="//pages.anjukestatic.com/img/broker/browser-icon/firefox.png" alt="firefox">
+                    <p>火狐</p>
+                </a>
+                <a data-type="3" href="//browser.360.cn/se/" target="_blank" _soj="lte_ie_download">
+                    <img src="//pages.anjukestatic.com/img/broker/browser-icon/360.png" alt="360">
+                    <p>360</p>
+                </a>
+                                <a data-type="4" href="//pc.qq.com/detail/2/detail_26342.html" target="_blank" _soj="lte_ie_download">
+                    <img src="//pages.anjukestatic.com/img/broker/browser-icon/ie.png" alt="IE9">
+                    <p>Edge及以上</p>
+                </a>
+                                
+            </div>
+        </div>
+        <label>
+            <input type="radio" name="abandon_reason" value="4" autocomplete="off">其他
+            <input class="ui-form-input ui-input-big specific-reason" type="text" autocomplete="off">
+            <i>*</i>
+            <span class="error-msg error-msg-specific">请填写原因</span>
+        </label>
+    </div>
+
+    <p class="submit-btn ui-button ui-button-small ui-button-blue">提交</p>
+</div>
+<div class="dark-cover"></div>
+<![endif]-->
+<div id="ajk-dnscheck-include" href="javascript:;"></div>
+<div id="ajk-dnscheck-pages" href="javascript:;"></div>
+<script type="text/javascript">
+    window._domainConfig = {"domianwhitelist":["\\.test$","\\.anjuke\\.com$","\\.anjukestatic\\.com$","\\.ajkimg\\.com$","\\.ajkcdn\\.com$","\\.aifcdn\\.com$","\\.58ganji\\.com$","\\.58\\.com$","\\.ganji\\.com$","\\.58cdn\\.com\\.cn$","\\.map\\.bdimg\\.com$","\\.baidu\\.com$","\\.gtags\\.com$","\\.gtags\\.net$","\\.zampda\\.net$","\\.chinauma\\.net$","\\.mediav\\.com$","\\.googleadservices\\.com$","\\.googleadsserving\\.cn$","\\.googlesyndication\\.com$","\\.google-analytics\\.com$","\\.doubleclick\\.net$","\\.qq\\.com$","\\.sogou\\.com$","\\.pstatp\\.com$","\\.toutiao\\.com$","\\.tjqonline\\.cn$","\\.apiwmda\\.58\\.com\\.cn$","\\.j1\\.58cdn\\.com\\.cn$"],"site":"brokerv5","transferprotocol":"^http|^https","catchcontent":"no","catchurlorigin":"\/\/prism.anjuke.com","catchurlpathname":"\/collectpost\/fromfe\/","checkiplist":""} || "";
+    window._domainIsOpenDnsCheck = false;
+    window._dnsCheckPopUp = true;;
+    (function(config, checkPopup, openDNSCheck) {
+        function _setStyle(target, style) {
+            for (var i in style) {
+                target.style[i] = style[i];
+            }
+        }
+
+        function _creatElement(tag) {
+            return document.createElement(tag);
+        }
+        var popDialog = function() {
+            if (!checkPopup || !openDNSCheck) return;
+            if (document.cookie.indexOf("change_resource=") != -1) return;
+            var body = document.getElementsByTagName("body")[0];
+            var popDialog = _creatElement("div");
+            var popContent = _creatElement("p");
+            var refreshBtn = _creatElement("a");
+            var remindBtn = _creatElement("a");
+            var closeButton = _creatElement("a");
+            popDialog.setAttribute("id", "dnsCheckPopDialog");
+            _setStyle(popDialog, {
+                position: 'fixed',
+                right: '0px',
+                bottom: '0px',
+                width: '250px',
+                height: '150px',
+                zIndex: '1060',
+                backgroundColor: '#fff',
+                boxShadow: '-1px -1px 20px 2px #555'
+            });
+            popContent.innerHTML = '您当前页面是否显示为异常，</br>如是，请点击刷新';
+            _setStyle(popContent, {
+                fontColor: '#333',
+                paddingTop: '25px',
+                lineHeight: '25px',
+                textAlign: 'center'
+            });
+            var _btnStyle = {
+                display: 'inline-block',
+                width: '60px',
+                height: '30px',
+                color: '#fff',
+                fontSize: '17px',
+                lineHeight: '30px',
+                borderRadius: '3px',
+                position: 'absolute',
+                textAlign: 'center',
+                cursor: 'pointer',
+                margin: '20px 0 0 -40px'
+            };
+            refreshBtn.innerHTML = '刷新';
+            refreshBtn.onclick = function() {
+                window._setChangeResource();
+                window.location.reload();
+            }
+            _setStyle(refreshBtn, _btnStyle);
+            _setStyle(refreshBtn, {
+                backgroundColor: '#f60',
+                left: '50%'
+            });
+            remindBtn.innerHTML = '稍后提醒';
+            remindBtn.onclick = function() {
+                window._remindLater();
+            }
+            _setStyle(remindBtn, _btnStyle);
+            _setStyle(remindBtn, {
+                color: 'gray',
+                left: '80%',
+                fontSize: '13px'
+            });
+            closeButton.innerHTML = '关闭';
+            closeButton.onclick = function() {
+                document.body.removeChild(document.getElementById('dnsCheckPopDialog'));
+            }
+            _setStyle(closeButton, {
+                display: 'inline-block',
+                position: 'absolute',
+                cursor: 'pointer',
+                top: '10px',
+                fontSize: '12px',
+                right: '10px',
+                color: '#f60'
+            });
+            popDialog.appendChild(popContent);
+            popDialog.appendChild(refreshBtn);
+            popDialog.appendChild(remindBtn);
+            popDialog.appendChild(closeButton);
+            body.appendChild(popDialog);
+        }
+        window._setAJKCookie = function(name, value, expires) {
+            var _hostArray = location.hostname.split(".");
+            var _domain = ".anjuke.com";
+            var _length = _hostArray.length;
+            if (_length >= 2) {
+                _domain = "." + _hostArray[_length - 2] + "." + _hostArray[_length - 1];
+            }
+            var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+            if (expires instanceof Date) {
+                cookieText += '; expires=' + expires.toGMTString();
+            }
+            cookieText += ";path=/;domain=" + _domain;
+            document.cookie = cookieText;
+        }
+        window._remindLater = function() {
+            date = new Date();
+            date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
+            window._setAJKCookie('change_resource', '9999', date);
+            document.body.removeChild(document.getElementById('dnsCheckPopDialog'))
+        }
+        window._setChangeResource = function() {
+            date = new Date();
+            date.setTime(date.getTime() + 24 * 60 * 60 * 1000);
+            window._setAJKCookie('change_resource', '1', date);
+        }
+        var doc = document;
+        var pagesDnscheck = doc.getElementById("ajk-dnscheck-pages");
+        var includeDnscheck = doc.getElementById("ajk-dnscheck-include");
+
+        function _checkStyleIsError(target) {
+            var isError = false;
+            if (typeof(window.getComputedStyle) == "function") {
+                if (window.getComputedStyle(target, null).getPropertyValue("position") != "absolute" && window.getComputedStyle(target, null).getPropertyValue("width") != "1px" && window.getComputedStyle(target, null).getPropertyValue("background-color").replace(/ /g, '') != "rgb(110,110,110)") {
+                    isError = true;
+                }
+            } else {
+                var _popupIsShow = false;
+                if (typeof(target.currentStyle) != "undefined" && target.currentStyle["position"] != "absolute" && target.currentStyle["width"] != "1px" && target.currentStyle["backgroundColor"] != "rgb(110,110,110)") {
+                    isError = true;
+                }
+            }
+            return isError;
+        }
+
+        function _checkDNSStatus() {
+            var _popupIsShow = false;
+            if (_checkStyleIsError(includeDnscheck)) {
+                _sendDNSKidnapMessage("include_dns_kidnap", _popupIsShow);
+                _popupIsShow = true;
+            }
+            if (_checkStyleIsError(pagesDnscheck)) {
+                _sendDNSKidnapMessage("pages_dns_kidnap", _popupIsShow);
+            }
+        }
+
+        function _sendDNSKidnapMessage(cont, popDialogIsShow) {
+        }
+        _checkDNSStatus();
+        var site = config["site"];
+        var whiteList = config["domianwhitelist"];
+        var protocol = config["transferprotocol"];
+        config["catchcontent"] = config["catchcontent"] == "yes" ? true : false;
+        var matchRegExp = new RegExp(whiteList.join("|"));
+        var domain = function(site, whiteList, protocol, separator, config) {
+            if (!window.performance || !window.performance.getEntries) {
+                return false;
+            }
+            var _sp = separator || '<|>';
+            if (protocol != "") {
+                var protocol = protocol.constructor == RegExp ? protocol : new RegExp(protocol);
+            }
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    var all = getAfflux(whiteList, protocol, config);
+                    send(site, all, _sp);
+                }, 1000);
+            });
+        }
+        var send = function(site, data, sp) {
+        }
+        var sendCatchContent = function(callback) {
+            if (config["catchurlpathname"] != "" && config["catchurlpathname"] != undefined) {
+                var origin = config["catchurlorigin"] != "" && config["catchurlorigin"] != undefined ? config["catchurlorigin"] : location.origin;
+                var sendUrl = origin + config["catchurlpathname"];
+                postMsg(sendUrl, {
+                    brokerId: getCookie('aQQ_ajkguid'),
+                    content: document.getElementsByTagName("html")[0].outerHTML
+                }, callback);
+            }
+        }
+        var getTargetAttrs = function(targetName, attrName) {
+            if (!targetName || !attrName) {
+                return [];
+            }
+            var _targets = document.getElementsByTagName(targetName);
+            for (var i = _targets.length - 1, _arr = []; i >= 0; i--) {
+                var _attr = _targets[i].getAttribute(attrName);
+                if (_attr) {
+                    _arr.push(_attr);
+                }
+            }
+            return _arr;
+        }
+        window.reportError = function(callback) {
+            sendCatchContent(callback);
+            window.reportError = function() {};
+        }
+        var postMsg = function(url, data, callback) {
+            var iframeId = 'ajax_post_' + postMsg._post_id++;
+            var ifContainer = document.createElement("div");
+            ifContainer.innerHTML = '<iframe style="display:none" id="' + iframeId + '" name="' + iframeId + '" height="300" width="500"></iframe>';
+            (document.getElementsByTagName('head')[0]).appendChild(ifContainer);
+            var form = document.createElement("form");
+            form.action = url;
+            form.method = "post";
+            for (var k in data) {
+                var _input = document.createElement('input');
+                _input.name = k;
+                _input.value = data[k] || "";
+                form.appendChild(_input);
+            }
+            (document.getElementsByTagName('head')[0]).appendChild(form);
+            var iframe = document.getElementById(iframeId);
+            form.target = iframeId;
+            form.submit();
+            if (callback) {
+                callback();
+            }
+        }
+        postMsg._post_id = 1;
+        var getCookie = function(check_name) {
+            var a_all_cookies = document.cookie.split(';');
+            var a_temp_cookie = '';
+            var cookie_name = '';
+            var cookie_value = '';
+            var b_cookie_found = false;
+            for (i = 0; i < a_all_cookies.length; i++) {
+                a_temp_cookie = a_all_cookies[i].split('=');
+                cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+                if (cookie_name == check_name) {
+                    b_cookie_found = true;
+                    if (a_temp_cookie.length > 1) {
+                        cookie_value = unescape(a_temp_cookie[1].replace(/^\s+|\s+$/g, ''));
+                    }
+                    return cookie_value;
+                    break;
+                }
+                a_temp_cookie = null;
+                cookie_name = '';
+            }
+            if (!b_cookie_found) {
+                return null;
+            }
+        }
+        var getDomain = function(name) {
+            if (!name || !name['split']) {
+                return false;
+            }
+            var _match = name.split('/');
+            return _match[2];
+        }
+        var getAfflux = function(whiteList, protocol, config) {
+            var all = performance.getEntries();
+            var domainList = [];
+            var _whiteList = [];
+            var _isSendBody = false;
+            for (var i = 0; i < all.length; i++) {
+                var item = all[i];
+                var _url = item.name;
+                if (item.initiatorType != undefined && checkTransferProtocol(_url, protocol)) {
+                    var _thisDomain = getDomain(_url);
+                    if (_thisDomain && _url && !isInWhiteList(_thisDomain, _whiteList)) {
+                        domainList.push(item.initiatorType + _url);
+                        if (item.initiatorType == "iframe" && checkIPList(config)) {
+                            _isSendBody = true;
+                        }
+                    }
+                }
+            }
+            if (config["catchcontent"] && _isSendBody) {
+                sendCatchContent(config);
+            }
+            return domainList;
+        }
+        var checkIPList = function(config) {
+            if (config["checkiplist"] == undefined || config["checkiplist"] == "") return true;
+            return true;
+        }
+        var checkTransferProtocol = function(url, protocol) {
+            if (protocol == "") return true;
+            return protocol.test(url);
+        }
+        var isInWhiteList = function(item, _array) {
+            var _inWhiteList = false;
+            if (matchRegExp.test(item)) _inWhiteList = true;
+            return _inWhiteList;
+        }
+        domain(site, whiteList, protocol, "<|>", config);
+    })(window._domainConfig, window._dnsCheckPopUp, window._domainIsOpenDnsCheck);
+</script>
+<!-- 183-203999635 -->
+
+    <!--新布局-->
+    <section class="main-app-layout">
+        <!-- 全量后，需要下面的样式替换Header.css内容 -->
+<style>
+    .ui-header {
+        width: 100%;
+        height: 64px;
+        line-height: 64px;
+        z-index: 500;
+        box-shadow: none;
+        background-color: transparent !important;
+    }
+
+    .ui-header i[class^="iconbroker-"] {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.85)
+    }
+
+    .ui-header a:hover {
+        text-decoration: none !important;
+    }
+
+    .ui-header .ui-header-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        line-height: 64px;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        min-width: 1020px;
+        background-color: #f5f5f7 !important;
+        background-image: url(https://pages.anjukestatic.com/fe/esf/img/65a0884c/broker_bg_gradient.png);
+        background-repeat: no-repeat;
+    }
+
+    .ui-header-logo {
+        height: 64px;
+        float: unset;
+        padding: 0;
+    }
+
+    .ui-header-logo a {
+        display: flex;
+        height: 64px;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .ui-header-logo a img {
+        display: block;
+        height: 64px !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .ui-header-link {
+        height: 64px;
+        color: #000;
+        font-size: 12px;
+        text-align: right;
+        padding-right: 26px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ui-header-link .space-split {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .ui-header-link .space-split .space-item ~ .space-item {
+        margin-left: 8px;
+    }
+
+    .ui-header-link a {
+        display: flex;
+        align-items: center;
+        margin: 0 5px;
+        font-size: 14px;
+        line-height: 22px;
+        color: #333;
+    }
+
+    .ui-header-link .new-layout-questionnaire {
+        display: flex;
+        color: #5689ee;
+        font-size: 12px;
+        background: linear-gradient(90deg, rgba(86, 137, 238, 0.1) 0%,rgba(136, 176, 255, 0.1) 100%);
+        border-radius: 14px;
+        padding: 4px 12px;
+    }
+
+    .ui-header-link .new-layout-questionnaire i {
+        font-size: 16px;
+        color: #5689ee !important;
+    }
+
+    .ui-header-link .userbox {
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .ui-header-link .userbox .avatar {
+        box-sizing: border-box;
+        margin: 0 5px;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        font-feature-settings: 'tnum', "tnum";
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        background: #ccc;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+    }
+
+    .ui-header-link .userbox .avatar > img {
+        display: block;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ui-header-link .userbox .name {
+        margin-left: 8px;
+    }
+
+    .ui-header-link .badge {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        font-feature-settings: 'tnum', "tnum";
+        position: relative;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    .ui-header-link .badge-dot {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        transform-origin: 100% 0%;
+        z-index: auto;
+        width: 6px;
+        min-width: 6px;
+        height: 6px;
+        background: #ff4d4f;
+        border-radius: 100%;
+        box-shadow: 0 0 0 1px #fff;
+    }
+
+    .custom-tipsy {
+        display: none;
+        font-size: 12px;
+        position: absolute;
+        z-index: 100000;
+        max-width: 400px;
+    }
+
+    .custom-tipsy.is-header-tipsy {
+        padding-top: 9px;
+    }
+
+    .custom-tipsy.tipsy-ne {
+        right: 0 !important;
+    }
+
+    .custom-tipsy.is-header-tipsy .tipsy-arrow {
+        position: absolute;
+        display: block;
+        width: 8.48528137px;
+        height: 8.48528137px;
+        overflow: hidden;
+        background: transparent;
+        pointer-events: none;
+        left: 50%;
+        top: 1.51471863px;
+        transform: translateX(-50%);
+        border: none;
+        margin: auto;
+    }
+
+    .custom-tipsy.is-header-tipsy .tipsy-arrow-n {
+        left: 50%;
+        top: 1.51471863px;
+        transform: translateX(-50%);
+    }
+
+    .custom-tipsy.is-header-tipsy .tipsy-arrow-ne {
+        left: 75%;
+    }
+
+    .custom-tipsy.is-header-tipsy .tipsy-arrow > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: auto;
+        background-color: #fff;
+        content: '';
+        pointer-events: auto;
+        box-shadow: -2px -2px 5px rgb(0, 0, 0, 0.06);
+        transform: translateY(4.24264069px) rotate(45deg);
+        border: none;
+    }
+
+    .custom-tipsy.is-header-tipsy .tipsy-inner {
+        padding: 13px 12px;
+        border-color: transparent;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-radius: 4px;
+        box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) \9;
+    }
+
+    .tipsy-mobile:hover .custom-tipsy,
+    .userbox:hover .custom-tipsy {
+        display: block;
+    }
+
+    .userbox .userbox-account-list {
+        width: 318px;
+        max-height: 396px;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        -ms-scroll-chaining: chained;
+    }
+
+    .userbox .userbox-account-list.account-none {
+        width: 142px;
+    }
+
+    .userbox .userbox-account-list > li {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 12px 8px 12px 16px;
+        line-height: 22px;
+        cursor: pointer;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .userbox .userbox-account-list.account-none > li {
+        padding: 12px 24px;
+    }
+
+    .userbox .userbox-account-list > li  span {
+        margin: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .userbox .userbox-account-list > li .account-company {
+        display: flex;
+        align-items: center;
+    }
+
+    .userbox .userbox-account-list > li .account-company span.info {
+        padding-left: 8px;
+    }
+
+    .userbox .userbox-account-list > li .account-company i {
+        font-size: 16px;
+    }
+
+    .userbox .userbox-account-list > li .account-userinfo {
+        display: flex;
+        padding-top: 2px;
+    }
+
+    .userbox .userbox-account-list > li .account-userinfo span.info {
+        padding-left: 24px;
+        color: rgba(0, 0, 0, 0.45);
+    }
+
+    .userbox .userbox-account-list > li.account-logout {
+        padding: 0;
+    }
+
+    .userbox .userbox-account-list > li.is-dock {
+        position: sticky;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        box-shadow: 0px -4px 4px 0px rgb(0 0 0 / 5%);
+        padding: 0;
+    }
+
+    .userbox .userbox-account-list > li.account-logout a {
+        padding: 12px 8px 12px 16px;
+        margin: 0;
+    }
+
+    .userbox .userbox-account-list.account-none > li.account-logout a {
+        padding: 12px 24px;
+        margin: auto;
+    }
+
+    .userbox .userbox-account-list > li:not(.account-active):hover {
+        color: #000;
+        background-color: #f7f7f7;
+        font-weight: 600;
+    }
+
+    .userbox .userbox-account-list .account-active {
+        color: #ff4d13;
+        background-color: rgba(255, 77, 19, 0.08);
+    }
+    .ui-header-link .use-old-layout {
+        display: flex;
+        font-size: 14px;
+        border-radius: 14px;
+    }
+
+    .ui-header-link .use-old-layout i {
+        margin-right: 4px;
+    }
+</style>
+<header class="ui-header">
+    <div class="ui-header-inner">
+        <div class="ui-header-logo">
+            <a href="/user/brokerhomeV2">
+                <img src="//pages.anjukestatic.com/fe/esf/img/e2baf935/log_threenets@2x.png" />
+            </a>
+        </div>
+        <div class="ui-header-link">
+            <div class="space-split">
+                <div class="space-item">
+                    <a href="//survey.58.com/?id=1035337&hash=0zga" target="_blank" rel="noreferrer">
+                        <span class="new-layout-questionnaire">
+                            新版导航调研 <i class="iconbroker-edit-fill"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="space-item">
+                    <a id="use-old-layout" class="use-old-layout" href="javascript: void(0);">
+                        <i class="iconbroker-swap"></i>
+                        <span>返回旧版</span>
+                    </a>
+                </div>
+                <div class="space-item">
+                    <a class="tipsy-mobile" href="javascript: void(0);" style="position: relative;">
+                        <i class="iconbroker-menu-phone"></i>
+                        <div
+                            class="custom-tipsy tipsy-n is-header-tipsy"
+                            style="top: 22px; left: -100px; visibility: visible; opacity: 1;"
+                        >
+                            <div class="tipsy-arrow tipsy-arrow-n">
+                                <div class="tipsy-arrow-nps"></div>
+                            </div>
+                            <div class="tipsy-inner">
+                                <div style="display: flex; flex-direction: column; align-items: center; padding: 7px 12px 11px 12px;">
+                                    <span style="font-size: 14px; font-weight: 700; line-height: 1; padding-bottom: 10px;">
+                                        扫码下载移动经纪人APP
+                                    </span>
+                                    <img width="172px" src="//pages.anjukestatic.com/brokerview/downloadApp/broker-download-app.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="space-item">
+                    <a href="//h5.anjuke.com/broker/policy/vip-qualifications-rule" target="_blank" rel="noreferrer">
+                        <i class="iconbroker-menu-certificate"></i>
+                    </a>
+                </div>
+                <div class="space-item">
+                    <a href="/intel_contact/main" target="_blank" rel="noreferrer">
+                        <i class="iconbroker-menu-customerservice"></i>
+                    </a>
+                </div>
+                                    <div class="space-item">
+                        <a href="/broker/sletter/" target="_blank" rel="noreferrer">
+                            <span class="badge">
+                                <i class="iconbroker-menu-notice"></i>
+                                <sup data-show="true" class="badge-dot"></sup>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="space-item">
+                        <div class="userbox" style="position: relative;">
+                            <span class="avatar avatar-circle">
+<!--                                <img src="//pages.anjukestatic.com/fe/esf/img/26389b51/comm_head_sculpture.png">-->
+                                <img src="https://spic1.ajkimg.com/c5zmtA-Ga32ikek3NxlkRL0I-guOdzOcmdfQtuDQ2QCSRezWzZrG82X_uN5n0ocEhLJEreo9YiPDKMKaahFEi4tuo6ITVOuKa3PgSaPNnEhuV8x-gbo0vD6LnWawOWdsSofHdHi-Te4hQayTx22MnMT0zsCoCIk6LJySXcsWE7EIjmAituWht7Q4fMlVhtnA" alt="Image">
+                            </span>
+                            <span class="name">邓美灵</span>
+                            <i class="iconbroker-down" style="font-size: 14px;"></i>
+                            <div
+                                class="custom-tipsy tipsy-n is-header-tipsy"
+                                style="top: 27px; right: 0; visibility: visible; opacity: 1;">
+                                <div class="tipsy-arrow tipsy-arrow-n" style="right: 24px; left: auto;">
+                                    <div class="tipsy-arrow-nps"></div>
+                                </div>
+                                <div class="tipsy-inner" style="padding: 4px;">
+                                    <ul class="userbox-account-list account-none">
+                                        <li class="account-active" style="display: none;">
+                                            <div class="account-company">
+                                                <i class="iconbroker-check-circle"></i>
+                                                <span class="info">公司名</span>
+                                            </div>
+                                            <div class="account-userinfo">
+                                                <span class="info">城市名-用户名</span>
+                                            </div>
+                                        </li>
+                                        <li class="account-logout">
+                                            <a href="/logout">
+                                                <div class="account-company">
+                                                    <i class="iconbroker-export"></i>
+                                                    <span class="info">退出登录</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</header>
+        <section class="main-app-layout main-app-layout-has-sider">
+            <aside class="main-app-layout-sider main-app-layout-sider-dark menu-sider-wrapper">
+                <div class="main-app-layout-sider-children">
+                    
+<!-- 全量后，需要下面的样式替换Left.css内容 -->
+<style>
+    .menu-sider-wrapper {
+        position: fixed;
+        left: 0;
+        top: 64px;
+        bottom: 0;
+        background: transparent;
+        padding-top: 8px;
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 16px;
+        min-width: 334px !important;
+        width: 334px !important;
+        flex: 0 0 334px;
+    }
+
+    .menu-sider-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .menu-sider-wrapper .menu-layout {
+        position: relative;
+        height: 100%;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .menu-sider-wrapper ul,
+    .menu-sider-wrapper .main-app-menu-inline {
+        width: 125px !important;
+        background-color: transparent;
+    }
+
+    .main-app-menu {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        font-feature-settings: 'tnum', "tnum";
+        margin-bottom: 0;
+        padding-left: 0;
+        color: rgba(0, 0, 0, 0.65);
+        font-size: 14px;
+        line-height: 0;
+        text-align: left;
+        list-style: none;
+        outline: none;
+        transition: background 0.3s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+    }
+
+    .main-app-menu-item, .main-app-menu-submenu-title {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0 20px;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: border-color 0.3s, background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .main-app-menu a.link {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        display: flex;
+        align-items: center;
+    }
+
+    .first-level-menus {
+        position: absolute;
+        width: 155px;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 12px;
+        padding-bottom: 16px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .other-level-menus {
+        position: absolute;
+        left: 156px;
+        height: 100%;
+        font-size: 14px;
+        padding-left: 12px;
+        padding-right: 6px;
+        padding-bottom: 32px;
+        border-left: 1px solid rgba(0, 0, 0, 0.06);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .other-level-menus ul {
+        margin: 0;
+    }
+
+    .main-app-layout-sider .menu-layout .other-level-menus ul,
+    .main-app-layout-sider .menu-layout .other-level-menus .venus-main-app-menu-inline {
+        width: 147px !important;
+    }
+
+    .first-level-name {
+        width: 126px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.85);
+        padding-left: 8px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .first-level-menus .first-level {
+        padding-left: 24px;
+        line-height: 32px;
+        position: relative;
+        font-size: 14px;
+        height: 32px !important;
+        padding: 0 !important;
+        margin: 0;
+        -webkit-user-select: none;
+        user-select: none;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .first-level-menus .first-level .link span.link-title {
+        display: block;
+        padding: 0 3px 0 0;
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .menu-sider-wrapper .first-level.main-app-menu-item ~ .main-app-menu-item {
+        margin-top: 10px;
+    }
+
+    .menu-sider-wrapper .second-level,
+    .menu-sider-wrapper .third-level {
+        -webkit-user-select: none;
+        user-select: none;
+        line-height: 36px !important;
+        padding: 0 !important;
+    }
+
+    .first-level-menus .first-level:hover,
+    .first-level-menus .first-level.active,
+    .menu-sider-wrapper .second-level.main-app-menu-item-only-child:hover,
+    .menu-sider-wrapper .third-level:hover {
+        color: #ff4d13;
+        background-color: #fae5dc !important;
+        border-radius: 4px;
+    }
+
+    .first-level-menus .first-level:hover .link,
+    .first-level-menus .first-level.active .link,
+    .menu-sider-wrapper .second-level.main-app-menu-item-only-child:hover .link,
+    .menu-sider-wrapper .third-level:hover .link {
+        color: #ff4d13;
+    }
+
+    .menu-sider-wrapper .second-level {
+        margin: 4px 0 0 !important;
+    }
+
+    .menu-sider-wrapper .second-level.main-app-menu-item-only-child {
+        padding: 0px !important;
+    }
+
+    .menu-sider-wrapper .main-app-menu-submenu-title .main-app-menu-title-content {
+        flex: auto;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 20px;
+    }
+
+    .menu-sider-wrapper .second-level.main-app-menu-item-only-child span.main-app-menu-title-content span.link-title {
+        display: block;
+        padding: 0 5px 0 10px;
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .menu-sider-wrapper .second-level .third-level {
+        padding: 0px !important;
+        margin: 4px 0 0 !important;
+    }
+
+    .menu-sider-wrapper .second-level .third-level.main-app-menu-item-only-child span.main-app-menu-title-content span.link-title {
+        display: block;
+        padding: 0 5px 0 24px;
+        margin: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .menu-sider-wrapper .main-app-menu-item-selected.second-level,
+    .menu-sider-wrapper .main-app-menu-item-selected.third-level {
+        background-color: #fae5dc !important;
+        box-shadow: none;
+    }
+
+    .main-app-menu-inline.main-app-menu-root .main-app-menu-item,
+    .main-app-menu-inline.main-app-menu-root .main-app-menu-submenu-title {
+        display: flex;
+        align-items: center;
+        transition: border-color 0.3s, background 0.3s, padding 0.1s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .menu-sider-wrapper .main-app-menu-item-selected {
+        position: relative !important;
+        left: 0 !important;
+        border-radius: 4px;
+    }
+
+    .main-app-menu-item > .main-app-menu-title-content {
+        flex: auto;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .main-app-menu-item > .main-app-menu-title-content:hover {
+        color: #ff4d13;
+    }
+
+    .menu-sider-wrapper .first-level .link {
+        font-size: 14px;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .menu-sider-wrapper .first-level .link:hover {
+        text-decoration: none;
+    }
+
+    .menu-sider-wrapper .icon {
+        float: none;
+        width: 16px;
+        font-size: 16px;
+        text-align: center;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+
+    .menu-sider-wrapper .main-app-menu-item-selected.first-level {
+        background-color: #FF6836 !important;
+        box-shadow: 0 0 12px 0 rgb(255 104 54 / 30%);
+    }
+
+    .menu-sider-wrapper .main-app-menu-item-selected .link {
+        color: #fff !important;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+
+    .menu-sider-wrapper .main-app-menu-item-selected.second-level .link,
+    .menu-sider-wrapper .main-app-menu-item-selected.third-level .link {
+        color: #ff4d13 !important;
+    }
+
+    .main-app-menu-hidden,
+    .main-app-menu-submenu-hidden {
+        display: none;
+    }
+
+    .menu-sider-wrapper .main-app-menu-submenu-open,
+    .menu-sider-wrapper .venus-main-app-menu-submenu-open .venus-main-app-menu-inline {
+        background-color: transparent !important;
+    }
+
+    .main-app-menu-submenu-expand-icon, .main-app-menu-submenu-arrow {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 10px;
+        color: rgba(0, 0, 0, 0.65);
+        transform: translateY(-50%);
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .main-app-menu-submenu-open.main-app-menu-submenu-inline > .main-app-menu-submenu-title > .main-app-menu-submenu-arrow {
+        transform: translateY(-2px);
+    }
+
+    .main-app-menu-submenu-arrow::before,
+    .main-app-menu-submenu-arrow::after {
+        position: absolute;
+        width: 6px;
+        height: 1.5px;
+        background-color: currentcolor;
+        border-radius: 2px;
+        transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        content: '';
+    }
+
+    .main-app-menu-submenu-open.main-app-menu-submenu-inline > .main-app-menu-submenu-title > .main-app-menu-submenu-arrow::before {
+        transform: rotate(45deg) translateX(2.5px);
+    }
+
+    .main-app-menu-submenu-open.main-app-menu-submenu-inline > .main-app-menu-submenu-title > .main-app-menu-submenu-arrow::after {
+        transform: rotate(-45deg) translateX(-2.5px);
+    }
+
+    .main-app-menu-inline-collapsed .main-app-menu-submenu-arrow::before,
+    .main-app-menu-submenu-inline .main-app-menu-submenu-arrow::before {
+        transform: rotate(-45deg) translateX(2.5px);
+    }
+
+    .main-app-menu-inline-collapsed .main-app-menu-submenu-arrow::after,
+    .main-app-menu-submenu-inline .main-app-menu-submenu-arrow::after {
+        transform: rotate(45deg) translateX(-2.5px);
+    }
+
+    .main-app-menu-submenu:hover > .main-app-menu-submenu-title > .main-app-menu-submenu-expand-icon,
+    .main-app-menu-submenu:hover > .main-app-menu-submenu-title > .main-app-menu-submenu-arrow {
+        color: #ff4d13;
+    }
+
+    .menu-sider-wrapper .main-app-menu-submenu-inline .main-app-menu-submenu-title {
+        padding: 0 !important;
+        margin: 0 !important;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .menu-sider-wrapper .main-app-menu-submenu-inline .main-app-menu-submenu-title,
+    .menu-sider-wrapper .main-app-menu-submenu-inline .main-app-menu-item,
+    .menu-sider-wrapper .second-level a.link span.link-title {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .menu-sider-wrapper .second-level.main-app-menu-submenu .main-app-menu-submenu-title {
+        padding-left: 8px !important;
+    }
+
+    .menu-sider-wrapper .second-level.main-app-menu-submenu .main-app-menu-submenu-title:hover{
+        color: #ff4d13;
+    }
+
+    .main-app-menu-item a {
+        font-size: 14px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.65);
+    }
+
+    .main-app-menu-inline .main-app-menu-item,
+    .main-app-menu-inline .main-app-menu-submenu-title {
+        width: calc(100% + 1px);
+    }
+
+    .tipsy.is-menu-tipsy {
+        padding-left: 7px;
+    }
+
+    .tipsy.is-menu-tipsy .tipsy-arrow {
+        position: absolute;
+        display: block;
+        width: 13.07106781px;
+        height: 13.07106781px;
+        overflow: hidden;
+        background: transparent;
+        pointer-events: none;
+        top: 50%;
+        left: -5.07106781px;
+        transform: translateY(-50%);
+        border: none;
+        margin: auto;
+    }
+
+    .tipsy.is-menu-tipsy .tipsy-arrow > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.75);
+        content: '';
+        pointer-events: auto;
+        box-shadow: -3px 3px 7px rgb(0 0 0 / 7%);
+        transform: translateX(6.53553391px) rotate(45deg);
+        border: none;
+    }
+
+    .tipsy.is-menu-tipsy .tipsy-inner {
+        border-color: transparent;
+        background-clip: padding-box;
+        border-radius: 4px;
+        box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.15) \9;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        padding: 6px 10px;
+    }
+
+    .menu-mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(https://pages.anjukestatic.com/fe/esf/img/65a0884c/broker_bg_gradient.png);
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1365px) {
+        .menu-sider-wrapper {
+            min-width: 245px !important;
+            width: 245px !important;
+            flex: 0 0 245px !important;
+        }
+
+        .menu-layout .first-level-menus {
+            width: 68px;
+        }
+
+        .menu-layout .other-level-menus {
+            left: 69px;
+        }
+
+        .menu-layout .first-level-menus ul,
+        .menu-layout .first-level-menus .main-app-menu-inline {
+            width: 39px !important;
+        }
+
+        .menu-layout .first-level-menus .first-level .link {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-layout .first-level-menus .first-level .link span.link-title {
+            display: none;
+        }
+    }
+
+    /* Works on Firefox */
+    .main-app-layout .menu-layout * {
+        scrollbar-width: thin;
+        scrollbar-color: #ddd transparent;
+    }
+
+    /* Works on Chrome, Edge, and Safari */
+    .main-app-layout  .menu-layout *::-webkit-scrollbar {
+        visibility: hidden;
+        width: 3px;
+    }
+
+    .main-app-layout  .menu-layout *:hover::-webkit-scrollbar {
+        height: 10px;
+        visibility: visible;
+    }
+
+    .main-app-layout  .menu-layout *:hover::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .main-app-layout  .menu-layout *:hover::-webkit-scrollbar-thumb {
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+</style>
+<div class="menu-mask"></div>
+<div id="menu-layout" class="menu-layout">
+    <div id="first-level-menus" class="first-level-menus">
+        <ul class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light">
+                                            <li data-id="9" data-title="首页" class="main-app-menu-item app-menu-item-only-child first-level main-app-menu-item-selected active">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="9" data-title="首页"  >
+                                                            <i class="iconfont icon">&#xE014;</i>
+                                <span class="link-title">首页</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="1" data-title="APP下载" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="/portal/mobile_download" data-id="1" data-title="APP下载"  target="_blank">
+                                                            <i class="iconfont icon">&#xE059;</i>
+                                <span class="link-title">APP下载</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="16" data-title="房产经纪学苑" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="/broker/skip/university" data-id="16" data-title="房产经纪学苑"  target="_blank">
+                                                            <i class="iconfont icon">&#xec1c;</i>
+                                <span class="link-title">房产经纪学苑</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="2" data-title="二手房" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="2" data-title="二手房"  >
+                                                            <i class="iconfont icon">&#xE007;</i>
+                                <span class="link-title">二手房</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="3" data-title="租房" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="3" data-title="租房"  >
+                                                            <i class="iconfont icon">&#xE008;</i>
+                                <span class="link-title">租房</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="4" data-title="商业地产" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="4" data-title="商业地产"  >
+                                                            <i class="iconfont icon">&#xE015;</i>
+                                <span class="link-title">商业地产</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="11" data-title="新房" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="11" data-title="新房"  >
+                                                            <i class="iconfont icon">&#xE063;</i>
+                                <span class="link-title">新房</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="17" data-title="公司房源" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="/shop/home" data-id="17" data-title="公司房源"  target="_blank">
+                                                            <i class="iconfont icon">&#xebe2;</i>
+                                <span class="link-title">公司房源</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="18" data-title="内容营销" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="18" data-title="内容营销"  >
+                                                            <i class="iconfont-wb icon">&#59998</i>
+                                <span class="link-title">内容营销</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="5" data-title="数据中心" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="5" data-title="数据中心"  >
+                                                            <i class="iconfont icon">&#xE013;</i>
+                                <span class="link-title">数据中心</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="6" data-title="账户中心" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="6" data-title="账户中心"  >
+                                                            <i class="iconfont icon">&#xE011;</i>
+                                <span class="link-title">账户中心</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="7" data-title="个人资料" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="7" data-title="个人资料"  >
+                                                            <i class="iconfont icon">&#xE009;</i>
+                                <span class="link-title">个人资料</span>
+                                                    </a>
+                    </span>
+                </li>
+                                            <li data-id="14" data-title="服务中心" class="main-app-menu-item app-menu-item-only-child first-level ">
+                    <span class="main-app-menu-title-content">
+                        <a class="link" href="###" data-id="14" data-title="服务中心"  >
+                                                            <i class="iconfont icon">&#xE016;</i>
+                                <span class="link-title">服务中心</span>
+                                                    </a>
+                    </span>
+                </li>
+                    </ul>
+    </div>
+    <div id="other-level-menus" class="other-level-menus">
+        <div id="first-level-name" class="first-level-name">首页</div>
+                                                <ul data-id="9" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" >
+                                                                                                <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/user/brokerhomeV2" data-id="9_1" data-title="经纪人工作台" >
+                                        <span class="link-title">经纪人工作台</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                        <li style="display: none;" class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                            <div class="main-app-menu-submenu-title">
+                                <span class="main-app-menu-title-content">近期常用功能</span>
+                                <i class="main-app-menu-submenu-arrow"></i>
+                            </div>
+                            <ul id="most-used-menus" class="main-app-menu main-app-menu-sub main-app-menu-inline"></ul>
+                        </li>
+                                    </ul>
+                                                                                                                            <ul data-id="2" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">发布房源</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/mix/second-hand/second-hand-house-v2?from=manage" data-id="2_0" data-title="发布房源"  target="_blank">
+                                                    <span class="link-title">发布房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/venus/new-house/agency-new-house?from=manage&tab=xf" data-id="2_61" data-title="发布新房"  target="_blank">
+                                                    <span class="link-title">发布新房</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/house/templates" data-id="2_4" data-title="房源模板" >
+                                                    <span class="link-title">房源模板</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">房源库</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/mix/second-hand/list__sl" data-id="2_9" data-title="全部房源" >
+                                                    <span class="link-title">全部房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/venus/rectify/rectify-house" data-id="2_17_11" data-title="待整改房源" >
+                                                    <span class="link-title">待整改房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/mix/panorama/image-warehouse__sl" data-id="2_8" data-title="全景图库" >
+                                                    <span class="link-title">全景图库</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/video/library/esf" data-id="2_15" data-title="视频库" >
+                                                    <span class="link-title">视频库</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/mix/second-hand/guarantee-list__sl" data-id="2_6" data-title="安选服务" >
+                                                    <span class="link-title">安选服务</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/esf-fe/house-maintain/house-maintain__sl" data-id="2_20" data-title="待维护房源" >
+                                                    <span class="link-title">待维护房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">推广房源</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/choice/lego/manage/58/esf" data-id="2_2" data-title="58推广" >
+                                                    <span class="link-title">58推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/choice/lego/manage/ajk/esf" data-id="2_1" data-title="安居客推广" >
+                                                    <span class="link-title">安居客推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="3" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/business/api-pc/common/redirect/zufang/publish" data-id="3_0" data-title="发布房源"  target="_blank">
+                                        <span class="link-title">发布房源</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">房源库</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zfhug/apartmentjump?type=list" data-id="3_5" data-title="全部房源" >
+                                                    <span class="link-title">全部房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zfhug/ownquanjing" data-id="3_8" data-title="全景图库" >
+                                                    <span class="link-title">全景图库</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zf/guarantee/list/" data-id="3_4" data-title="安选服务" >
+                                                    <span class="link-title">安选服务</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zufang/main/zufang/subpages/correctPage" data-id="3_13" data-title="纠偏自证" >
+                                                    <span class="link-title">纠偏自证</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">推广房源</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zfhug/apartmentjump?type=wubaSpread" data-id="3_2" data-title="58推广" >
+                                                    <span class="link-title">58推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/zfhug/apartmentjump?type=ajkSpread" data-id="3_1" data-title="安居客推广" >
+                                                    <span class="link-title">安居客推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="4" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">发布房源</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/house/publish/office/?from=manage" data-id="4_0" data-title="发布房源"  target="_blank">
+                                                    <span class="link-title">发布房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/house/templates-sydc" data-id="4_0_2" data-title="房源模板" >
+                                                    <span class="link-title">房源模板</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">房源库</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/sydcpublish/main/sydcpublish/subpages/allHousing" data-id="4_3" data-title="全部房源" >
+                                                    <span class="link-title">全部房源</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">推广房源</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/choice/lego/manage/58/xz" data-id="4_2" data-title="58推广" >
+                                                    <span class="link-title">58推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/choice/lego/manage/ajk/sy" data-id="4_1" data-title="安居客推广" >
+                                                    <span class="link-title">安居客推广</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                </ul>
+                                                                                                                            <ul data-id="18" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">视频获客</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/mix/second-hand/guide-list__sl" data-id="18_6_2" data-title="发布视频" >
+                                                    <span class="link-title">发布视频</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/user/broker/ask" data-id="18_2" data-title="房产问答" >
+                                        <span class="link-title">房产问答</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/threenets/venus/brand-promotion/guide" data-id="18_3" data-title="品牌推广" >
+                                        <span class="link-title">品牌推广</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="5" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/thirdparty/aiinstitute" data-id="5_0" data-title="经纪人参谋"  target="_blank">
+                                        <span class="link-title">经纪人参谋</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">我的数据</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/statistics/spreadstatistics?businessType=operationAnalysis" data-id="5_1_0" data-title="操作分析" >
+                                                    <span class="link-title">操作分析</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/statistics/propanalysis?businessType=houseAnalysis" data-id="5_1_1" data-title="房源分析" >
+                                                    <span class="link-title">房源分析</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/statistics/marketanalysis?businessType=marketAnalysis" data-id="5_1_2" data-title="市场分析" >
+                                                    <span class="link-title">市场分析</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/venus/report/client-report" data-id="5_1_3" data-title="获客数据" >
+                                                    <span class="link-title">获客数据</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="6" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">资金管理</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/broker/account" data-id="6_9_0" data-title="余额充值" >
+                                                    <span class="link-title">余额充值</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/broker/balancedetail/generalize" data-id="6_9_1" data-title="明细查询" >
+                                                    <span class="link-title">明细查询</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/broker/moneyPeriod/" data-id="6_9_2" data-title="有效期查询" >
+                                                    <span class="link-title">有效期查询</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/broker/wubatrade" data-id="6_8" data-title="房产交易宝" >
+                                                    <span class="link-title">房产交易宝</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">套餐管理</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/combo/redirect?type=buy" data-id="6_10_1" data-title="购买套餐" >
+                                                    <span class="link-title">购买套餐</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/combo/redirect?type=detail" data-id="6_10_2" data-title="套餐详情" >
+                                                    <span class="link-title">套餐详情</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/combo/history/detail/list" data-id="6_10_4" data-title="历史套餐" >
+                                                    <span class="link-title">历史套餐</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">连接产品</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/threenets/venus/connectivity-products/customer_tickets_purchase__sl" data-id="6_15_1" data-title="抢客券" >
+                                                    <span class="link-title">抢客券</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href=" /threenets/venus/connectivity-products/chat_bag_purchase__sl" data-id="6_15_2" data-title="畅聊包" >
+                                                    <span class="link-title">畅聊包</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                                                        <li class="main-app-menu-submenu main-app-menu-submenu-inline second-level main-app-menu-submenu-open">
+                                <div class="main-app-menu-submenu-title">
+                                    <span class="main-app-menu-title-content">优惠券管理</span>
+                                    <i class="main-app-menu-submenu-arrow"></i>
+                                </div>
+                                <ul class="main-app-menu main-app-menu-sub main-app-menu-inline">
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/thirdredirect/?logintype=wuba&redirecturl=//coupon.58.com/?clientID=9" data-id="6_11_1" data-title="58优惠券"  target="_blank">
+                                                    <span class="link-title">58优惠券</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                            <li class="main-app-menu-item main-app-menu-item-only-child third-level  ">
+                                            <span class="main-app-menu-title-content">
+                                                <a class="link" href="/combo/account/couponcardlog" data-id="6_11_2" data-title="安居客优惠券" >
+                                                    <span class="link-title">安居客优惠券</span>
+                                                </a>
+                                            </span>
+                                        </li>
+                                                                    </ul>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="7" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/user/broker/shopswitcher" data-id="7_6" data-title="个人店铺" >
+                                        <span class="link-title">个人店铺</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/broker/service" data-id="7_5" data-title="个人服务" >
+                                        <span class="link-title">个人服务</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/broker/brokerinfo" data-id="7_0" data-title="个人资料" >
+                                        <span class="link-title">个人资料</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/bindshow" data-id="7_3" data-title="账号关联" >
+                                        <span class="link-title">账号关联</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  sydc-publish">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/modify/new/password" data-id="7_1" data-title="修改密码" >
+                                        <span class="link-title">修改密码</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/broker/brokerphones/" data-id="7_4" data-title="手机号管理" >
+                                        <span class="link-title">手机号管理</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                </ul>
+                                                            <ul data-id="14" class="main-app-menu main-app-menu-root main-app-menu-inline main-app-menu-light" style="display: none;">
+                                                                                                <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/intel_contact/main" data-id="14_2" data-title="在线客服"  target="_blank">
+                                        <span class="link-title">在线客服</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/appealcenter/list" data-id="14_3" data-title="申诉中心" >
+                                        <span class="link-title">申诉中心</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                                                        <li class="main-app-menu-item main-app-menu-item-only-child second-level  ">
+                                <span class="main-app-menu-title-content">
+                                    <a class="link" href="/threenets/mix/correction/correct-list__sl" data-id="14_4" data-title="新建&纠错查询" >
+                                        <span class="link-title">新建&纠错查询</span>
+                                    </a>
+                                </span>
+                            </li>
+                                                                                </ul>
+                        </div>
+</div>
+<script id="menu-item-template" type="text/template">
+    <% $.each(data, function(i, item) { %>
+        <li class="main-app-menu-item main-app-menu-item-only-child third-level">
+            <span class="main-app-menu-title-content">
+                <a class="link" href="<%= item.link %>" data-id="<%= item.menuid %>" data-title="<%= item.title %>" target="<%= item.target %>">
+                    <span class="link-title"><%= item.title %></span>
+                </a>
+            </span>
+        </li>
+    <% }); %>        
+</script>
+
+                </div>
+            </aside>
+            <section class="main-app-layout threenets-layout">
+                <main class="main-app-layout-content threenets-content">
+                    <div class="homepage">
+    <div id="swipe-list" class="swipe">
+    <div class='swipe-wrap'>
+            <div data-index="0" class="slider-item" style="z-index: 1">
+            <a href='https://ftoy.m.58.com/active/1753262495481' target='_blank' _soj=brokerhome_banner_top >
+                <img src="https://pic1.ajkimg.com/display/xinform/a430047afb33229dd868827c66754f62/x.jpg.56df0c69b321604421424e13f09fe7bc.jpg" alt=""  width="960" height="90">
+            </a>
+        </div>
+        </div>
+    </div>
+<!-- 此组件针对ie8及以下浏览器部分功能禁用 -->
+
+<!-- 提示更新浏览器弹窗 -->
+<div class="forbidden-ie8-tips">
+    <span class="forbidden-close-button iconfont icon-f">&#xe001;</span>
+    <div class="lte-ie8-title">
+        <img src="//pages.anjukestatic.com/img/broker/browser-icon/alert.png" alt="alert">
+        您当前浏览器版本过低，请去升级！
+    </div>
+    <div class="lte-ie8-detail">
+        <p>该功能不支持低版本浏览器查看哟～</p>
+    </div>
+    <div class="lte-ie8-recommand">
+        <p>官方推荐浏览器:</p>
+        <p class="info">（请点击以下图标进行下载升级）</p>
+        <div class="forbidden-browser-container">
+            <a data-type="1" href="//pc.qq.com/detail/1/detail_2661.html" target="_blank" _soj="lte_chrome_download">
+                <img src="//pages.anjukestatic.com/img/broker/browser-icon/chrome.png" alt="chrome">
+                <p>谷歌</p>
+            </a>
+            <a data-type="2" href="//www.firefox.com.cn/" target="_blank"  _soj="lte_firefox_download">
+                <img src="//pages.anjukestatic.com/img/broker/browser-icon/firefox.png" alt="firefox">
+                <p>火狐</p>
+            </a>
+            <a data-type="3" href="//browser.360.cn/se/" target="_blank" _soj="lte_ie_download">
+                <img src="//pages.anjukestatic.com/img/broker/browser-icon/360.png" alt="360">
+                <p>360</p>
+            </a>
+            <a data-type="4" href="//pc.qq.com/detail/10/detail_2630.html" target="_blank" _soj="lte_ie_download">
+                <img src="//pages.anjukestatic.com/img/broker/browser-icon/ie.png" alt="IE9">
+                <p>IE9及以上</p>
+            </a>                    
+        </div>
+    </div>
+</div>
+<div class="forbidden-dark-cover"></div>    <!-- 抵用卡提示信息 -->
+    <!-- <div class="ui-tips ui-tips-warn-hasborder ui-tips-credit" id="j-couponcard-box">
+    </div> -->
+
+    <a href="https://vip.anjuke.com/updatebroswer" id="browser-warn" class="browser-warn quanjing-top" style="display: none">
+        <p class="ui-tips ui-tips-warn-hasborder ui-tips-hasbutton" style="margin-left:0;">
+        您好！经纪人：<br>
+        您当前所使用的 IE 浏览器，微软公司已宣布于今年06月15日停止维护。为了保证您使用 “中国网络经纪人" 网站的最佳体验，及账号资产的安全，请及时更换其他浏览器的最新版本。本系统预计将在07月25日后，不再支持 IE 浏览器访问。
+        </p>
+    </a>
+
+    <a href="https://vip.anjuke.com/updatebroswer" id="browser-warn-all" class="browser-warn quanjing-top" style="display: none">
+        <p class="ui-tips ui-tips-warn-hasborder ui-tips-hasbutton" style="margin-left:0;">
+        您好！经纪人：<br>
+        您当前所使用的 IE 浏览器，微软公司已宣布于今年06月15日停止维护。为了保证您使用 “中国网络经纪人" 网站的最佳体验，及账号资产的安全，请及时更换其他浏览器的最新版本。本系统预计将在09月05日后，不再支持 IE 浏览器访问。
+        </p>
+    </a>
+
+    <div class="ui-tips ui-tips-warn-hasborder broadcast-strip">
+        <i class="iconfont">&#xe002;</i>
+        <div class="broadcast-box">
+            <ul class="broadcast-list">
+            </ul>
+        </div>
+    </div>
+
+    <!-- 个人信息 -->
+    <div class="basic-infos-mod">
+        <div class="clearfix">
+                            <div class="user-avatar" alt="个人头像"  style="background-image:url(https://spic1.ajkimg.com/c5zmtA-Ga32ikek3NxlkRL0I-guOdzOcmdfQtuDQ2QCSRezWzZrG82X_uN5n0ocEhLJEreo9YiPDKMKaahFEi4tuo6ITVOuKa3PgSaPNnEhuV8x-gbo0vD6LnWawOWdsSofHdHi-Te4hQayTx22MnMT0zsCoCIk6LJySXcsWE7EIjmAituWht7Q4fMlVhtnA);"></div>
+                        <div class="user-box">
+                <p class="user">
+                    <span class="name">邓美灵</span>
+                    <span id="vip-user" class="hide-info">
+                        <span class="vip"></span>
+                        <span id="vip-info">
+                            <span class="plus-active hide-info"></span>
+                            <span class="plus-inactive hide-info"></span>
+                            <a href="/brokervip/home" target="_blank" class="vip-link">查看权益</a>
+                        </span>
+                    </span>
+                </p>
+
+                                    <!-- 神奇分勋章 城市灰度 -->
+                                                                        <p class="honor-tabs">
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isHolder" original-title="尚未获得职业资格证书">&#xeb63;</i></a>
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isIdentify" original-title="尚未通过网络经纪人认证考试">&#xeb64;</i></a>
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isTalent" original-title="尚未成为闪电侠">&#xeade;</i></a>
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isSenior" original-title="尚未获得经纪达人">&#xeb66;</i></a>
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isManager" original-title="未获得店长力荐">&#xeb80;</i></a>
+                                <a href="/user/magicpoints/medal" target="_blank"><i class="iconfont gray" id="isMedalLandlord" original-title="尚未获得积极代理">&#xec19;</i></a>
+                            </p>
+                                                                                        <div class="broker-level magic-point"></div>
+                                                                        <p class="shop">其他公司 / 其他门店&nbsp;&nbsp;<a href="/broker/modify/brokerinfo">认证失败</a></p>
+                
+                <p class="phone-group">
+                    <span class="item">58展示:<em class="phone">155****6559</em></span>
+                    <span class="item">安居客展示:<em class="phone">155****6559</em></span>
+                </p>
+                <p class="broker-evaluation"></p>
+            </div>
+        </div>
+        <div class="server-tags">
+            <div class="s-tags-box">
+                                                    <span class="tag gray">未设置标签</span>
+                            </div>
+            <a href="/broker/service" class="set-tags-link" _soj="brokerhome_tags_set">设置&gt;</a>
+        </div>
+        <a href="/broker/brokerinfo" class="ui-button ui-button-positive ui-button-small" _soj="brokerhome_user_edit">修改资料</a>
+    </div>
+    <div class="home-con">
+        <div class="main-box">
+                        <!-- 健康度任务 -->
+            <div class="health-task-mod">
+                                    <div class="health-degree-wrapper">
+    <div class="loading">
+        <span class="tips-text">内容正在传输中，请稍等...</span>
+    </div>
+    <div class="health-error">
+        <span class="tips-text">内容正在传输中，请稍后刷新!</span>
+    </div>
+    <div class="health-degree-box"></div>
+</div>
+<script id="house-recommend-template" type="text/template">
+    <div class="house-recommend">
+        <div class="house-recommend-bg"></div>
+        <div class="house-recommend-title">营销房源优化</div>
+        <ul class="house-recommend-list">
+            <% $.each(healthDegree, function(key,item) { %>
+                <li class="house-recommend-item">
+                    <p class="house-recommend-item-title"><%=item.typeName %></p>
+                    <% if(item.type === 'esf'){ %>
+                        <!-- 套餐 １有套餐　０无套餐 -->
+                        <% if(item.isCombo === 0){ %>
+                            <div class="house-recommend-text-simple">
+                                您未开通套餐，请充值开通。
+                                <a href="/broker/account?from=brokerhome_recharge" class="house-recommend-action-btn" target="_blank">去充值</a>
+                            </div>
+                        <% }else if(item.isPunish){ %>
+                            <div class="house-recommend-text-simple">
+                                禁发期间，请遵守平台规则。
+                            </div>
+                         <!-- 禁发 １ 禁发　０非禁发 -->
+                        <% }else if(item.optimize.length > 0){ %>
+                            <div>
+                                <span class="house-recommend-action-btn" id="id-house-recommend-action-btn">去优化</span>
+                                <!-- <a href="<%= item.propertyRecommendUrl %>" class="house-recommend-action-btn" target="_blank" _soj="pcpage_recommendentrance_click">去优化</a> -->
+                                <% $.each(item.optimize, function(i, it) { %>
+                                    <div class="house-recommend-detail-item">
+                                        <%if(it.orangeIcon){ %>
+                                            <img src="https://wos.58cdn.com.cn/cDazYxWcDHJ/picasso/d9ckr70a__w48_h48.png" alt="">
+                                        <% }else{ %>
+                                            <img src="https://wos.58cdn.com.cn/cDazYxWcDHJ/picasso/l17595t5__w48_h48.png" alt="">
+                                        <% } %>
+                                        
+                                        <% $.each(it.template, function(ind, nodeItem) { %>
+                                            <% if(nodeItem.nodeColor === 'orange'){ %>
+                                                <span class="house-recommend-highlight-orange"><%=nodeItem.nodeText %></span>
+                                            <% }else if(nodeItem.nodeColor === 'blue'){ %>
+                                                <span class="house-recommend-highlight-blue"><%=nodeItem.nodeText %></span>
+                                            <% }else{ %>
+                                                <span><%=nodeItem.nodeText %></span>
+                                            <% } %>
+                                        <% }); %>
+                                    </div>
+                                <% }); %>
+                            </div>
+                        <% }else{ %>
+                            <div class="house-recommend-no-open-item">
+                                数据暂未更新
+                            </div>
+                        <% } %>
+
+                    <% }else if(item.type === 'zf'){ %>
+                        <!-- openCity是否开城 １开城　０未开城 -->
+                        <% if(item.zfNewRecommend && item.zfNewRecommend.openCity === 0){ %>
+                            <div class="house-recommend-no-open-item">
+                                暂未开通，敬请期待！
+                            </div>
+                         <!-- 套餐 １有套餐　０无套餐 -->
+                        <% }else if(item.zfNewRecommend && item.zfNewRecommend.hasCombo === 0){ %>
+                            <div class="house-recommend-text-simple">
+                                您未开通套餐，请充值开通。
+                                <a href="/broker/account?from=brokerhome_recharge" class="house-recommend-action-btn" target="_blank">去充值</a>
+                            </div>
+                        <% }else if(item.isPunish){ %>
+                            <!-- 禁发 １ 禁发　０非禁发 -->
+                            <div class="house-recommend-text-simple">
+                                禁发期间，暂无推荐房源，请遵守平台规则。
+                            </div>
+                        <% }else if(item.zfNewRecommend){ %>
+                            <div>
+                                <a href="/zufang/main/zufang/subpages/rentbrokerforward/house/recommend" class="house-recommend-action-btn" target="_blank">去优化</a>
+                                <div class="house-recommend-detail-item">
+                                    <img src="https://wos.58cdn.com.cn/cDazYxWcDHJ/picasso/l17595t5__w48_h48.png" alt="">
+                                    <% if(item.zfNewRecommend.houseCount > 0){ %>
+                                        <span class="house-recommend-highlight-blue"><%=item.zfNewRecommend.houseCount %>套</span>
+                                    <% }else{ %>
+                                        <span><%=item.zfNewRecommend.houseCount %>套</span>
+                                    <% } %>
+                                    <span>甄选房源，建议推广</span>
+                                </div>
+                                <div class="house-recommend-detail-item">
+                                    <img src="https://wos.58cdn.com.cn/cDazYxWcDHJ/picasso/l17595t5__w48_h48.png" alt="">
+                                    <% if(item.zfNewRecommend.communityCount > 0){ %>
+                                        <span class="house-recommend-highlight-blue"><%=item.zfNewRecommend.communityCount %>个</span>
+                                    <% }else{ %>
+                                        <span><%=item.zfNewRecommend.communityCount %>个</span>
+                                    <% } %>
+                                    <span>热门小区精选，建议发房</span>
+                                </div>
+                            </div>
+                        <% }else{ %>
+                            <div class="house-recommend-no-open-item">
+                                数据暂未更新
+                            </div>
+                        <% } %>
+                    <!-- isOpenHug城市开通 １ 开通　０未开通 -->
+                    <% }else if(item.isOpenHug === 0){ %>
+                        <div class="house-recommend-no-open-item">
+                            暂未开通，敬请期待！
+                        </div>
+                    <!-- 套餐 １有套餐　０无套餐 -->
+                    <% }else if(item.isCombo === 0){ %>
+                        <div class="house-recommend-text-simple">
+                            您未开通套餐，请充值开通。
+                            <a href="/broker/account?from=brokerhome_recharge" class="house-recommend-action-btn" target="_blank">去充值</a>
+                        </div>
+                    <!-- 禁发 １ 禁发　０非禁发 -->
+                    <%}else if(item.isPunish){ %>
+                        <div class="house-recommend-text-simple">
+                            禁发期间，请遵守平台规则。
+                        </div>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</script>
+<script id="health-degree-template" type="text/template">
+    <div class="health-degree">
+        <ul class="health-list">
+            <% $.each(healthDegree, function(key,item) { %>
+                <li class="health-item">
+                    <!-- isOpenHug城市开通 １ 开通　０未开通 -->
+                    <%if(item.isOpenHug === 0){ %>
+                        <div class="no-open-item">
+                            <div class="no-open-box">
+                                <span class="no-open"></span>
+                                <p class="title"><span class="highlight"><%=item.typeName %></span>昨日健康度</p>
+                                <p class="wait-expect">敬请期待！</p>
+                            </div>
+                        </div>
+                    <!-- 套餐 １有套餐　０无套餐 -->
+                    <% }else if(item.isCombo === 0){ %>
+                        <div class="no-combo-item">
+                            <div class="no-combo-box">
+                                <div class="no-combo">
+                                    <div class="combo-text">
+                                        <p class="no-combo-text"></p>
+                                        <p class="title"><span class="highlight"><%=item.typeName %></span>昨日健康度</p>
+                                    </div>
+                                </div>
+                                <p class="tips">您未开通套餐哦，请充值开通</p>
+                                <a href="/broker/account?from=brokerhome_recharge" class="recharge" target="_blank">充值</a>
+                            </div>
+                        </div>
+                    <!-- 禁发 １ 禁发　０非禁发 -->
+                    <%}else if(item.isPunish){ %>
+                        <div class="forbid-item">
+                            <span class="forbid-item-box">
+                                <p class="forbid-item-text">0</p>
+                                <p class="title"><span class="highlight"><%=item.typeName %></span>昨日健康度</p>
+                            </span>
+                            <p class="tips"><span class="focal-point">禁发</span>期间，健康度为<span class="focal-point">0</span>，请遵守平台规则！</p>
+                        </div>
+                    <!-- 待评 house_num 0 待评-->
+                    <% }else if(item.houseNum === 0){ %>
+                        <div class="wait-review-item">
+                            <div class="wait-review-box">
+                                <div class="wait-review">
+                                    <div class="reivew-text">
+                                        <p class="wait-review-text"></p>
+                                        <p class="title"><span class="highlight"><%=item.typeName %></span>昨日健康度</p>
+                                    </div>
+                                </div>
+                                <p class="tips">每日上午<span class="highlight"><%=item.time %></span>更新，更新数据为昨日数据</p>
+                            </div>
+                        </div>
+                    <!-- 健康度存在 -->
+                    <% }else{ %>
+                        <div class="open-item">
+                            <div id="healthDegree<%=key%>" class="charts-box"></div>
+                            <% if(item.score === 100){ %>
+                                <p class="explain">昨日<span class="focal-point"><%=item.highNum %></span>套房源为高质量，请继续保持！</p>
+                            <% }else{ %>
+                                <p class="explain">昨日<span class="focal-point"><%=item.lowNum %></span>套房源为低质量，<span class="focal-point"><%=item.middleNum %></span>套房源为中质量，请尽快修改！</p>
+                            <% } %>
+                            <% if(item.type === 'esf'){ %>
+                                <a href="/househug/list/esfV2" class="look-details" target="_blank">查看</a>
+                            <% }else if(item.type === 'zf'){ %>
+                                <a href="/zfhug/list/zf" class="look-details" target="_blank">查看</a>
+                            <% } %>
+                        </div> 
+                    <% } %>
+                    <span class="line"></span>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="http://chatcms.anjuke.com/web/view/13390" title="健康度规则" class="health-rules" target="_blank" _soj="brokerhome_health_rule">
+            <i class="iconfont rule-icon">&#xE006;</i>规则
+        </a> 
+    </div>
+</script>                            </div>
+            <!-- 积分任务 -->
+            <div class="points-mask-mod">
+                <div class="summary-box" id="summary-box">
+                   <span class="blance">积分余额<em class="blance-num"></em></span>
+                   <span class="blance-tips">完成任务获得更多流量展示及其他权益</span>
+                                      <a href="#" class="ui-button ui-button-positive ui-button-small" style="width: 65px;" id="point-shop-url" _soj="brokerhome_point_entrance">积分商城</a>
+                                   </div>
+            </div>
+            <div class="account-mod" id="account_mod">
+            </div>
+            <!-- 账户情况 -->
+
+            <!-- 应用服务 -->
+            <div class="application-service-temp">
+
+            </div>
+
+            <!-- 数据中心 -->
+            <div class="data-mod">
+                <h3 class="hd">数据中心</h3>
+                <form id="data_query" class="data-query clearfix" action="">
+                    <span class="data-query-title">请选择需要查看的数据：</span>
+                    <div id="select_plate" class="ui-select">
+                        <select name="plate" style="display:none">
+                            <option value="">选择平台</option>
+                            <option value="58">58</option>
+                            <option value="ajk">安居客</option>
+                        </select>
+                    </div>
+                    <div id="select_biz" class="ui-select">
+                        <select name="biz" style="display:none">
+                            <option value="">选择业务</option>
+                            <option value="esf">二手房</option>
+                            <option value="zf">租房</option>
+                            <option value="jp">商业地产</option>
+                        </select>
+                    </div>
+                    <input class="ui-button ui-button-blue ui-button-small" type="submit" value="查询">
+                    <span id="data_tips_msg" class="ui-tips data-tips-msg"><i class="iconfont">&#xe001;</i><em></em></span>
+                    <a id="data_more" href="" target="_blank">更多数据></a>
+                </form>
+                <div class="data-box">
+                    <dl class="data-summary">
+                        <dt>今日数据<span></span></dt>
+                        <dd><label>推广房源量</label><strong id="data_summary_house">--</strong></dd>
+                        <dd><label>新增推广房源量</label><strong id="data_summary_spread">--</strong></dd>
+                    </dl>
+                    <h4 class="data-hd" style="display:none;">推广效果<span>（近7天数据）</span></h4>
+                    <div id="data_chart" class="data-chart" style="display:none;">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 客户主任 -->
+            <div class="director-mod">
+                <h3 class="hd">客户主任<span class="date">（周一至周五 9:00-18:00）</span></h3>
+                <div class="clearfix">
+                    <div class="server-phone"><img src="//pages.anjukestatic.com/fe/esf/img/d95338e6/kefubanner.png"></div>
+                    <ul class="director-list" id="j-director">
+                        <li class="item">
+                            <span class="plate">58客户主任</span>
+                            <span class="name">客户主任</span>
+                            <span class="phone">899-0098-9979</span>
+                        </li>
+                        <li class="item">
+                            <span class="plate">安居客客户主任</span>
+                            <span class="name">客户主任</span>
+                            <span class="phone">899-0098-9979</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 侧边 -->
+        <div class="side-home-box">
+            <!-- 平台规则 -->
+            <div class="mod rule-mod">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">平台规则</span>
+                        <a href="/threenets/venus/second-hand/second-hand-rules" class="chk-more" target="_blank">查看&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 资质公示 -->
+            <div class="mod rule-mod">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">资质公示</span>
+                        <a target="_blank" href="https://h5.anjuke.com/broker/policy/vip-qualifications-rule" class="chk-more">查看&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 红黄线处罚 -->
+            <div id="yellow-red-mod" class="mod yellow-red-mod" style="display: none;">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">红黄线处罚</span>
+                        <a href="/threenets/mix/red-yellow-line" class="chk-more" _soj="homepage_rednyellowline_click">查看&gt;</a>
+                    </div>
+                    <p class="hd-tips">可查看违规日志和处罚记录</p>
+                </div>
+                <div class="bd" style="display: none;">
+                    <div class="warn-msg" id="yellow-red-msg"></div>
+                </div>
+            </div>
+            <!-- 安心保障计划 -->
+            <div class="mod peace-plan-mod" >
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">安心保障计划</span>
+                        <a href=/broker/Illegal/list class="chk-more" _soj="homepage_weiguijinggao_click">查看&gt;</a>
+                    </div>
+                    <p class="hd-tips">可查看警告与禁发记录</p>
+                </div>
+                <div class="bd">
+                                                                                                                                    <!-- 本月警告累计信息 -->
+                    <p class="plan-tips">本月已累计警告：(截止昨日)</p>
+                    <ul class="list" id="j-peanPlan">
+                        <li class="item">
+                            <span class="warn-icon"><i class="is-normal"></i></span>
+                            <span class="warn-text">普通警告</span>
+                            <span class="warn-num">-</span>
+                        </li>
+                        <li class="item">
+                            <span class="warn-icon"><i class="is-middle"></i></span>
+                            <span class="warn-text">中等警告</span>
+                            <span class="warn-num">-</span>
+                        </li>
+                        <li class="item">
+                            <span class="warn-icon"><i class="is-fatal"></i></span>
+                            <span class="warn-text">严重警告</span>
+                            <span class="warn-num">-</span>
+                        </li>
+                    </ul>
+                    <p id="j-peanPlan-empty" class="no-data"></p>
+                    <div class="warn-rule" style="display: none;"><p>警告次数按程度独立统计，次数达上限后将触发禁发。</p></div>
+                </div>
+            </div>
+            <!-- 违规经纪人 -->
+            <div class="mod punish-broker-mod">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">违规经纪人公告</span>
+                        <a id="illegal-broker-link" href=http://www.anjuke.com/tycoon/weiguijingjiren/?from=broker class="chk-more" target="_blank">查看&gt;</a>
+                    </div>
+                    <p class="hd-tips">诚信执业，严惩虚假发布。</p>
+                </div>
+            </div>
+            <!-- 待办事项 -->
+            <div class="mod todo-matter-mod">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">待办事项</span>
+                    </div>
+                </div>
+                <div class="bd todo-list" id="j-todoList"></div>
+            </div>
+            <!-- 广告 -->
+                        <div class="mod adv-box">
+                <div id="right-banner" class="homeRightSwipe">
+    <div class='homeRightSwipe-wrap'>
+            <div data-index="0" class="homeRightSwipe-item" style="z-index: 1">
+            <a href='https://ftoy.m.58.com/active/1753262495481' target='_blank' _soj=brokerhome_banner_right >
+                <img src="https://pic1.ajkimg.com/display/xinform/ebf3a7b43b11cc69348c30d4d54ea88d/180x180.jpg.7798d1438bb0097ed0b8f1154c81bec4.jpg" alt=""  width="184" height="92">
+            </a>
+        </div>
+        </div>
+    </div>
+            </div>
+                        <!-- 公告 -->
+            <div class="mod notice-mod">
+                <div class="hd">
+                    <div class="clearfix">
+                        <span class="tit">公告</span>
+                        <a href="/user/bulletinboard" class="chk-more" _soj="brokerhome_notice_more">更多&gt;</a>
+                    </div>
+                </div>
+                <ul class="bd list"></ul>
+            </div>
+            <!-- 公告结束 -->
+        </div>
+    </div>
+</div>
+<!-- 从业信息弹窗 -->
+<!-- 上传身份信息模版 -->
+<script type="text/template" id="qualification-dialog">
+    <div class="ui-form" class="qualification-dialog">
+        <div style="color: red" id="qu_fail_reason"></div>
+        <div class="card">
+            <label>从业信息卡号：</label>
+            <input class="ui-form-input ui-input-job" placeholder="请输入">
+            <span class="ui-tips ui-tips-fail-noborder card-isnull">
+                <i class="iconfont">&#xE001</i>
+                请输入卡号
+            </span>
+            <span class="ui-tips ui-tips-fail-noborder card-istrue">
+                <i class="iconfont">&#xE001</i>
+                卡号错误
+            </span>
+        </div>
+        <div class="picture">
+            <label for="">上传图片：</label>
+            <div class="picture-input">
+                <div class="upload-box-loading">
+                    <div class="upload">
+                        <img src="//pages.anjukestatic.com/img/vip/home/cloud_Icon.png" alt="">
+                        <div class="upload-img">
+                            <a>点击上传<input type="file" id="pic-fileupload" name="file" multiple accept="image/*">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img class="show-img" alt="" id="bns_card_preview" width="362" height="184">
+            </div>
+            <span class="ui-tips ui-tips-fail-noborder">
+                <i class="iconfont">&#xE001</i>
+                请上传图片
+            </span>
+        </div>
+        <div class="tip">
+            <span>1.信息卡实物的原始照片（不能P图、自制、纸质/电脑拍照、扫描截图）清晰、信息完整，二维码可扫描，并必须完全正向放置，不歪斜、不横向或倒置</span>
+            <span>2.文件尺寸：尺寸大于400*250像素，文件大于20KB，小于600KB</span>
+            <span>3.文件格式：jpg、jpeg、png</span>
+            <span>4.信息内容：文字、图片、二维码信息一致，扫描结果“从业状态”为“从业”</span>
+        </div>
+        <div class="picture-name">
+            <img src="//pages.anjukestatic.com/img/vip/home/icon_pic.png" alt="">
+            <span class="picture-route"></span>
+            <a class="delete">删除</a>
+        </div>
+        <div class="dialog-buttom">
+            <button class="ui-button ui-button-default ui-button-small qualification-close">关闭</button>
+            <button class="ui-button ui-button-positive ui-button-small qualification-submit">确定</button>
+        </div>
+    </div>
+</script>
+
+<!-- 获客弹层模板 -->
+<script type="text/template" id="huoketool_dialog_temp">
+    <div class="huoketool-dialog-body">
+        <div class="huoketool-dialog-content">
+            <p class="huoketool-dialog-tip" style="display:none;">扫码绑定微信公众号<span class="tips">【网络经纪人之家】</span>，即可通过微信收取微聊、禁发、应检等消息。</p>
+            <p class="bind-safe-open-tip" style="display:none;">您开启了安全校验，校验成功后可获得绑定二维码。</p>
+            <div class="img-box" style="display:none;">
+                <img id="two_dimension_code" />
+                <div class="mask-box hidden" id="mask_box">
+                    <div class="mask-content">
+                        <p>二维码已失效</p>
+                        <button id="refresh_btn" class="ui-button ui-button-positive ui-button-small">请点击刷新</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bind-safe-open" style="display:none;"></div>
+            <div class="tips-list">
+                <p>1. 打开微信，扫描上方二维码，并关注微信公众号“网络经纪人之家”；</p>
+                <p>2. 关注完成后，系统自动完成绑定操作；</p>
+                <p>3. 绑定成功后，若有未及时回复的找房用户微聊咨询，即可通过微信公众号收到提醒；</p>
+                <p>4. 完成绑定后，即可不再收到弹窗提醒。</p>
+            </div>
+        </div>
+        <div class="dialog-buttom">
+            <button class="ui-button ui-button-positive ui-button-small huoketool-confirm">已经绑定</button>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="chooseMobile-dialog">
+    <div>
+        <p class="top-text">按全网通套餐规则，58和安居客展示手机号需为一致。</p>
+        <p class="top-text">以下号码中，请选择设置为一致的展示手机号，选择后系统将两网展示手机号同步为一致。</p>
+        <ul class="phone-list">
+            <li class="item">
+                <input type="radio" value="wb" class="telephone" name="phoneType"/>58展示手机号：<span id="wbPhone"><span>
+            </li>
+            <li class="item">
+                <input type="radio" value="ajk" class="telephone" name="phoneType"/>安居客展示手机号：<span id="ajkPhone"><span>
+            </li>
+        </ul>
+        <div class="dialog-operator">
+            <button id="submit-btn" class="ui-button ui-button-negative ui-button-small">确认提交</button>
+        </div>
+    </div>
+</script><!-- 新三网协议更新提示弹层模版 -->
+<script type="text/template" id="protocolChanged_dialog_temp">
+    <div class="protocolChanged-content" style="text-align:left; color:#333;">      
+        <p>感谢您信任并使用中国网络经纪人的产品和服务。</p><br>
+        <p>我们依据最新的法律要求及平台新功能规范，更新了《新三网平台用户协议》，特向您推送本提示。请您仔细阅读并充分理解相关条款，我们将尽全力保障您的合法权益并为您提供更优质的产品和服务。</p><br>
+        <p id="protocol_link" >查看新协议
+            <a class="protocol-link" style="color:blue" target="_blank" href="https://kfzx.anjuke.com/faqDetail/queryDetail?faqId=155&faqTypeId=10">《新三网用户服务协议》</a>
+        </p><br>      
+    </div>
+    <div id="dialog_buttom">
+        <button class="ui-button ui-button-positive ui-button-small protocol-button">已阅读</button>
+    </div>
+</script><!-- 提示框区域的模板，未来需要添加可自定义功能-->
+<div class="novice-guide">
+
+</div>
+<script id="novice-guide—template" type="text/template">
+    <div class="novice-guide-mask"></div>
+
+    <div class="novice-guide-layer"></div>
+    
+    <div class="novice-guide-hint <%= data.hintClass.overall %>">
+        <div class="novice-guide-hint-wrap">
+            <div class="novice-guide-hint-title <%= data.hintClass.title %>">
+                <span><%= data.title %></span>
+                <div class="novice-guide-hint-titile-countdown  <%= data.hintClass.time %>">
+                    <span class=""><%= data.time %></span>s后可关闭
+                </div>
+            </div>
+            <div class="novice-guide-hint-content <%= data.hintClass.text %>">
+                <span><%= data.text %></span>
+            </div>
+            <div class="novice-guide-hint-operation">
+                <a id="novice-guide-hint-confirm" class="ui-button ui-button-positive ui-button-small ui-button-disable <%= data.hintClass.button %>"><%= data.confirmText %></a>
+                <span class="novice-guide-hint-step"><%= data.step %></span>
+            </div>
+            <img class="novice-guide-hint-up" src="//pic6.58cdn.com.cn/nowater/fangfe/n_v2bf074ebdb62e4e8a91d3d25667e2fec3.png" alt="">
+            <img class="novice-guide-hint-down" src="//pic1.58cdn.com.cn/nowater/fangfe/n_v26349b50ee8a5487894708e271e28bed8.png" alt="">
+            <img class="novice-guide-hint-left" src="//pic7.58cdn.com.cn/nowater/fangfe/n_v2738f034cf4b441cbb20539df8a0a2220.png" alt="" width="10" height="16">
+            <img class="novice-guide-hint-right" src="//pic1.58cdn.com.cn/nowater/fangfe/n_v29a35070e3d2f4a46b961ad002f1901fa.png" alt="" width="10" height="16">
+        </div>
+    </div>
+</script><input type="hidden" name="mobileShow" value="" id="j-mobileShow">
+<input type="hidden" name="inviteId" value="" id="j-inviteId">
+<input type="hidden" name="brokerId" value="203999635" id="j-brokerId">
+<input type="hidden" name="shopVisitName" value=" " id="shopVisitName"/>
+<input type="hidden" name="isOpenDelivery" value="" id="j-isOpenDelivery">
+<input type="hidden" name="isOpenBrokerRank" value="1">
+<input type="hidden" name="isOpenBrokerRankV2" value="0">
+    <input type="hidden" name="isOpenBrokerRankV3" value="1">
+<!-- 神奇分勋章 灰度城市模版 -->
+<script type="text/template" id="magicPointsMedal">
+    <% _.each(data,function(item, i){ %>
+        <a href="/threenets/mix/magic-points/medal__hl">
+            <img id="<%= item.id %>" src="<%= item.img %>" original-title="<%= item.desc %>" class="magic-points-medal-img"  alt="">
+        </a>
+    <% }) %>
+</script>
+<script type="text/template" id="healthTaskTemp">
+    <ul class="task-list">
+       <% _.each(obj,function(item,i){ %>
+            <% if(item.iconStatus == 2) {%>
+            <li class="item">
+                <span class="task-label">
+                <% if(item.iconStatus == 2) {%>
+                   <i class="iconfont icon-wran">&#xe002;</i>
+                <%} else {%>
+                   <i class="iconfont icon-ok">&#xe003;</i>
+                <% } %>
+                <%= item.title %></span>
+                <span class="task-con">
+                   <% _.each(item.desc,function(array,i){ %>
+                   <p><%= array %></p>
+                   <%});%>
+               </span>
+               <% if(item.btnType == 3){%>
+               <a btn-type="<%= item.btnType %>" class="task-url pic-num-btn"><%=item.btnText%><!-- <i class="iconfont">&#xe027;</i> --></a>
+               <div class="pic-num-box">
+                    <% if(item.individuationData.wuba) {%>
+                        <a href="<%= item.individuationData.wuba.url %>" target="_blank"><%= item.individuationData.wuba.str%></a><%=(item.individuationData.gj)?'<span class="line">|</span>':'' %>
+                   <% } %>
+                    <% if(item.individuationData.gj) {%>
+                        <a href="<%= item.individuationData.gj.url %>" target="_blank"><%= item.individuationData.gj.str %></a>
+                        <%=(item.individuationData.ajk)?'<span class="line">|</span>':'' %>
+                    <% } %>
+                    <% if(item.individuationData.ajk) {%>
+                        <a href="<%= item.individuationData.ajk.url %>" target="_blank"><%= item.individuationData.ajk.str %></a>
+                    <% } %>
+                </div>
+               <% }else if(item.btnType != 3){ %>
+                   <a href="<%= item.btnUrl %>" btn-type="<%= item.btnType %>" class="task-url" target="_blank"><%=item.btnText%></a>
+               <% } %>
+           </li>
+           <% } %>
+       <%});%>
+   </ul>
+</script>
+<!-- 积分任务list -->
+<script type="text/template" id="pointTaskTemp">
+    <ul class="task-list">
+        <% _.each(obj,function(item,i){ %>
+            <% if(item.type !='wait') { %>
+                <% if(item.btnStatus == 1) { %>
+                    <li class="item unfinish-item" btn-url="<%= item.btnUrl %>" btn-type="<%= item.btnType%>"  data-key="<%= item.key%>">
+                        <% if(item.defaultIcon) { %>
+                        <i class="iconfont task-icon"><%= item.defaultIcon %></i>
+                        <% } else if(item.newDefaultIcon) { %>
+                        <i class="iconfont-wb task-icon"><%= item.newDefaultIcon %></i>
+                        <% }%>
+                        <h3 class="task-hd"><%= item.title %></h3>
+                        <p class="task-type"><%= item.subTitle %></p>
+                        <p class="task-detail"><%= item.detail %></p>
+                        <span class="task-btn"><%= item.btnText %></span>
+                    </li>
+                <% }else { %>
+                    <li class="item finish-item" title="<%=(item.title =='PC签到')?'今日已签到，明日再来吧！':''%>">
+                        <a target="_blank" onclick="return <%=((item.btnUrl || item.iconUrl) && item.taskId != 1)?true:false%>" href=<%= item.taskId == 1 ? 'javascript:;' : (item.iconUrl ? item.iconUrl : (item.btnUrl ? item.btnUrl : 'javascript:;')) %> >
+                        <% if(item.defaultIcon) { %>
+                        <i class="iconfont task-icon"><%= item.defaultIcon %></i>
+                        <% } else if(item.newDefaultIcon) { %>
+                        <i class="iconfont-wb task-icon"><%= item.newDefaultIcon %></i>
+                        <% }%>
+                        </a>
+                        <h3 class="task-hd"><%= item.title %></h3>
+                        <p class="task-type"><%= item.subTitle %></p>
+                        <p class="task-detail"><%= item.detail %></p>
+                        <span class="task-btn"><%= item.btnText %></span>
+                    </li>
+                <% } %>
+            <% } else{ %>
+                <li class="item wait-item">
+                    <i class="iconfont task-icon">&#xeac3;</i>
+                    <h3 class="task-hd">敬请期待</h3>
+                    <p class="task-type">...</p>
+                </li>
+            <% }%>
+        <%});%>
+    </ul>
+</script>
+
+<script type="text/template" id="dataSummaryTemp">
+    <dt>今日数据<span>（<%= updateTime %>）</span></dt>
+    <% _.each(propNum.reverse(),function(item){ %>
+        <dd><label><%= item.name %></label><strong><%= (item.val)?item.val:'--' %></strong></dd>
+    <% }) %>
+</script>
+<!-- 资金安全提示 -->
+<script type="text/template" id="fundSecurity">
+    <div class="fundSecurity">
+        <div class="title">
+            <span>充值购买重要提醒</span><i class="iconfont icon-close-btn">&#xe001;</i>
+        </div>
+        <div class="fund-main">
+           <p>近期有关部门发现，有经纪人通过第三方工具、现金转账、委托他人转账等方式进行充值或购买。</p>
+           <p>中国网络经纪人提醒您：端口开通、续费及充值时，请通过58/安居客平台线上操作，不要现金交易或将资金转给任何人，以免造成您的损失。请妥善保管账户密码，以免余额被盗。</p>
+        </div>
+       <div class="btn-box"><input type="button" value="我知道了" class="ui-button ui-button-positive ui-button-small close-btn"></div>
+    </div>
+</script>
+
+<!-- 账号被踢出处理 -->
+<script type="text/template" id="accountKickoutTemp">
+    <div class="account-kickout-box">
+        <p class="tips"><i class="iconfont">&#xe002;</i><%= alertMsg %></p>
+        <a id="account_kickout_modify" class="ui-button ui-button-positive ui-button-small" data-href="/broker/modify/brokerinfo">去修改</a>
+    </div>
+</script>
+
+<!-- 取消账号解绑 -->
+<script type="text/template" id="unbindNotice">
+    <div class="unbind-box">
+        <p class="title">经纪人朋友：</p>
+        <p class="message"><%=endTime %>起，平台将取消经纪人新三网账号与已绑定58账号的解除关联功能，届时新三网账号与58账号关联后将不支持解绑。</p>
+        <p class="message">请务必在<span class="highlight"><%=endTime %></span>前，及时将本人正确的58账号绑定在<span class="highlight">已完成实名认证</span>的新三网账号上。</p>
+    </div>
+    <div class="unbind-operator">
+        <button id="saveUnbind" type="button" class="ui-button ui-button-positive ui-button-medium">知道了</button>
+    </div>
+</script>
+
+<!-- 经纪人资质大清查弹窗模版 -->
+<script type="text/template" id="qualificationCheckTemp">
+    <div class="qualification-check">
+        <img class="qualification-title" src="//pages.anjukestatic.com/img/vip/home/qualification_title.png" alt="经纪人资质大清查">
+        <p class="qualification-info">
+            <span>《中华人民共和国电子商务法》</span>
+            （以下简称《电商法》）将于2019年1月1日正式生效。应《电商法》第9条、第15条、第27条、第76条以及第80条及《房地产经纪管理办法》第14条要求，
+            房地产经纪人不得以个人名义承接房地产经纪业务和收取费用。
+        </p>
+        <p>
+            2019年1月1日起，中国网络经纪人平台将按照国家法律规定，对经纪人公司属性进行清查，请各位经纪人朋友们，
+            <span>及时在中国网络经纪人后台上传正确的名片</span>，通过审核后，归属到正确的公司，以确保您的网络经营符合法律规范。
+        </p>
+        <div class="qualification-footer">
+            <a href="/broker/modify/brokerinfo">
+                <img class="qualification-btn" src="//pages.anjukestatic.com/img/vip/home/qualification_btn.png" alt="立即上传">
+            </a>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="account_mod_temp">
+    <h3 class="hd">账户套餐</h3>
+    <div class="combo-content">
+        <div class="combo-header">
+            <ul class="clearfix">
+                <li>
+                    <div>房产现金</div>
+                    <b><%= oData.wubaAccountInfo.blanceCash58 || '0.00' %></b>
+                </li>
+                <li>
+                    <div>房产币</div>
+                    <b><%= oData.wubaAccountInfo.blanceHbg58 || '0.00' %></b>
+                </li>
+                <li>
+                    <div>安居客现金</div>
+                    <b><%= oData.ajkAccountInfo.cashAccount || '0.00'%></b>
+                </li>
+                <li>
+                    <div>安币</div>
+                    <b><%= oData.ajkAccountInfo.blanceAjk || '0.00' %></b>
+                </li>
+                <li>
+                    <div>7天内到期房产币 </div>
+                    <b><%= oData.wubaAccountInfo.toExpireMoney || '暂无数据' %></b>
+                </li>
+                                <li class="account-mod_recharge">
+                    <a class="ui-button ui-button-positive ui-button-small" href="/broker/account"  target="_blank" _soj="brokerhome_recharge">充值</a>
+                </li>
+                            </ul>
+        </div>
+        <div class="combo-body">
+            <ul>
+                <% if (oData.allNetAccountInfo) { %>
+                <li>
+                    <div class="image-box">
+                        <img src="//pages.anjukestatic.com/fe/esf/img/382e05ca/home_ic_zh_qwt_scale.png" alt="全网通">
+                    </div>
+                    <div class="combo-info">
+                        <% if (oData.allNetAccountInfo.comboNum == 0) { %>
+                            <h3 class="title">您还未购买全网通套餐</h3>
+                            <p class="sub-title">购买全网通套餐增加58、安居客曝光</p>
+                        <% } else { %>
+                            <h3 class="title">购买了<span><%= oData.allNetAccountInfo.comboNum %></span>个全网通套餐</h3>
+                            <% if (oData.allNetAccountInfo.comboEffectNum == 1) { %>
+                            <p class="sub-title">当前生效套餐到期时间为<%= oData.allNetAccountInfo.expireTimer %></p>
+                            <% } else if (oData.allNetAccountInfo.comboEffectNum > 1){ %>
+                            <p class="sub-title">当前生效套餐中最近到期时间为<%= oData.allNetAccountInfo.expireTimer %></p>
+                            <% } else { %>
+                            <p class="sub-title">目前无生效中全网通套餐</p>
+                            <% } %>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <a href="<%= oData.allNetAccountInfo.detailsUrl %>" target="_blank" _soj="brokerhome_allnet_detail">套餐详情</a>
+                                                <a href="<%= oData.allNetAccountInfo.buyUrl %>" target="_blank" _soj="brokerhome_allnet_buy">购买套餐</a>
+                                                <% if (isOpenDeliver == 1) { %>
+                        <a href="/delivery/middle" target="_blank" _soj="brokerhome_zhqk_zntf">一键推广</a>
+                        <% } %>
+                    </div>
+                </li>
+                <% } %>
+                <li>
+                    <div class="image-box">
+                        <img src="//pages.anjukestatic.com/fe/esf/img/451b3f8d/home_ic_zh_58_scale.png" alt="58">
+                    </div>
+                    <div class="combo-info">
+                        <% if (oData.wubaAccountInfo.isRelated) { %>
+                            <% if (oData.wubaAccountInfo.comboNum == 0) { %>
+                                <h3 class="title">您还未购买58套餐</h3>
+                                <p class="sub-title">购买58套餐增加58曝光</p>
+                            <% } else { %>
+                                <h3 class="title">购买了<span><%= oData.wubaAccountInfo.comboNum%></span>个58套餐</h3>
+                                <% if (oData.wubaAccountInfo.comboEffectNum == 1) { %>
+                                <p class="sub-title">当前生效套餐到期时间为<%= oData.wubaAccountInfo.expireTimer %></p>
+                                <% } else if (oData.wubaAccountInfo.comboEffectNum > 1){ %>
+                                <p class="sub-title">当前生效套餐中最近到期时间为<%= oData.wubaAccountInfo.expireTimer %></p>
+                                <% } else { %>
+                                <p class="sub-title">目前无生效中58套餐</p>
+                                <% } %>
+                            <% } %>
+                        <% } else { %>
+                                <h3 class="title">未关联58账号</h3>
+                                <p class="sub-title">关联58账号购买58套餐</p>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <% if (oData.wubaAccountInfo.isRelated) { %>
+                            <a href="<%= oData.wubaAccountInfo.detailsUrl%>" target="_blank" _soj="brokerhome_wubaAccountInfo_detail">套餐详情</a>
+                                                        <a href="<%= oData.wubaAccountInfo.buyUrl%>" target="_blank" _soj="brokerhome_wubaAccountInfo_buy">购买套餐</a>
+                                                        <% if (isOpenDeliver == 1) { %>
+                            <a href="/delivery/middle" target="_blank" _soj="brokerhome_zhqk_zntf">一键推广</a>
+                            <% } %>
+                        <% } else { %>
+                            <a href="<%= oData.wubaAccountInfo.relateUrl%>" target="_blank" _soj="brokerhome_wubaAccountInfo_relate">立刻关联</a>
+                        <% } %>
+                    </div>
+                </li>
+                <li>
+                    <div class="image-box">
+                        <img src="//pages.anjukestatic.com/fe/esf/img/120fb1d3/home_ic_zh_ajk_scale.png" alt="安居客">
+                    </div>
+                    <div class="combo-info">
+                        <% if (oData.ajkAccountInfo.isRelated) { %>
+                            <% if (oData.ajkAccountInfo.comboNum == 0) { %>
+                                <h3 class="title">您还未购买安居客套餐</h3>
+                                <p class="sub-title">购买安居客套餐增加安居客曝光</p>
+                            <% } else { %>
+                                <h3 class="title">购买了<span><%= oData.ajkAccountInfo.comboNum%></span>个安居客套餐</h3>
+                                <% if (oData.ajkAccountInfo.comboEffectNum == 1) { %>
+                                <p class="sub-title">当前生效套餐到期时间为<%= oData.ajkAccountInfo.expireTimer %></p>
+                                <% } else if (oData.ajkAccountInfo.comboEffectNum > 1){ %>
+                                <p class="sub-title">当前生效套餐中最近到期时间为<%= oData.ajkAccountInfo.expireTimer %></p>
+                                <% } else { %>
+                                <p class="sub-title">目前无生效中安居客套餐</p>
+                                <% } %>
+                            <% } %>
+                        <% } else { %>
+                                <h3 class="title">未关联安居客账号</h3>
+                                <p class="sub-title">关联安居客账号购买安居客套餐</p>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <% if (oData.ajkAccountInfo.isRelated) { %>
+                            <a href="<%= oData.ajkAccountInfo.detailsUrl%>" target="_blank" _soj="brokerhome_ajkAccountInfo_detail">套餐详情</a>
+                                                    <a href="<%= oData.ajkAccountInfo.buyUrl%>" target="_blank" _soj="brokerhome_ajkAccountInfo_buy">购买套餐</a>
+                                                    <% if (oData.ajkAccountInfo.updateUrl) { %>
+                                <a href="<%= oData.ajkAccountInfo.updateUrl%>" target="_blank" _soj="brokerhome_ajkAccountInfo_update">套餐升级</a>
+                            <% } %>
+                        <% } else { %>
+                            <a href="<%= oData.ajkAccountInfo.relateUrl%>" target="_blank" _soj="brokerhome_ajkAccountInfo_relate">立刻关联</a>
+                        <% } %>
+                    </div>
+                </li>
+
+                <!-- 加量包 -->
+                <% if(oData.dosagePkgAccountInfo && oData.dosagePkgAccountInfo.canBuy) { %>
+                <li>
+                    <div class="image-box">
+                        <img src="https://pages.anjukestatic.com/fe/esf/img/45f5a207/tjpjlap3_waifu2x_art_scale.png" alt="加量包">
+                    </div>
+                    <div class="combo-info">
+                        <% if(oData.dosagePkgAccountInfo.comboNum > 0) { %>
+                            <h3 class="title">
+                                生效中加量包<span><%= oData.dosagePkgAccountInfo.comboEffectNum %></span>个，待生效<span><%= oData.dosagePkgAccountInfo.comboFutureNum %></span>个
+                                <i class="iconfont account-chat-icon" original-title="加量包是面向企业对接客户提供的一类托管权益包商品，购买后平台自动帮助经纪人托管推广房源。">&#xE006;</i>
+                            </h3>
+                            <% if(oData.dosagePkgAccountInfo.comboEffectNum > 0){ %>
+                            <p class="sub-title">
+                                当前生效中的加量包最近到期时间为<%= oData.dosagePkgAccountInfo.expireTimer %>
+                            </p>
+                            <% } else { %>
+                            <p class="sub-title">购买端口加量包，助力房源推广！</p>
+                            <% } %>
+                        <% } else { %>
+                            <h3 class="title">
+                                您还未购买加量包
+                                <i class="iconfont account-chat-icon" original-title="加量包是面向企业对接客户提供的一类托管权益包商品，购买后平台自动帮助经纪人托管推广房源。">&#xE006;</i>
+                            </h3>
+                            <p class="sub-title">购买端口加量包，助力房源推广！</p>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <a href="<%= oData.dosagePkgAccountInfo.buyUrl %>" _soj="homepage_dkjlb_click" target="_blank">购买加量包</a>
+                    </div>
+                </li>
+                <% } %>
+
+                <!-- 折扣卡 -->
+                <% if(oData.discountCardAccountInfo) { %>
+                <li>
+                    <div class="image-box">
+                        <img src="https://pages.anjukestatic.com/fe/esf/img/3d4fa6ae/n_v2f6a48e4322ec4f96b480a379fc78ff10_scale.png" alt="折扣卡">
+                    </div>
+                    <div class="combo-info">
+                        <% if(oData.discountCardAccountInfo.comboNum > 0) { %>
+                        <h3 class="title" style="<% if(oData.discountCardAccountInfo.isSoonExpired){%>padding-top:10px;<%}%>">购买了<span><%= oData.discountCardAccountInfo.comboNum %></span>个增值折扣卡</h3>
+                        <% if(oData.discountCardAccountInfo.isSoonExpired){ %>
+                        <p class="expire-sub-title">
+                            <%=oData.discountCardAccountInfo.expiredDate %> 到期，<span class="expire-highlight">仅剩<%=oData.discountCardAccountInfo.expiredDay %>天</span> ，
+                            <a class="expire-link" href="<%= oData.discountCardAccountInfo.buyUrl %>" target="_blank">快快续购吧></a>
+                        </p>
+                        <% } %>
+                        <% } else { %>
+                        <h3 class="title">您还未购买增值折扣卡</h3>
+                        <% if(oData.discountCardAccountInfo.isBought){ %>
+                        <p class="expire-sub-title">
+                            上期折扣卡一共为您节省<span class="history-highlight"><%= oData.discountCardAccountInfo.lastSaved %></span>房产币，折扣享不停，
+                            <a class="expire-link" href="<%= oData.discountCardAccountInfo.buyUrl %>">快快续购吧></a>
+                        </p>
+                        <% } else{ %>
+                        <p class="sub-title">两网通用，投的越多省的越多！</p>
+                        <% } %>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <a href="<%= oData.discountCardAccountInfo.detailsUrl %>" target="_blank">折扣卡详情</a>
+                        <a href="<%= oData.discountCardAccountInfo.buyUrl %>" target="_blank">购买折扣卡</a>
+                    </div>
+                </li>
+                <% } %>
+
+                <!-- 小安VIP -->
+                <% if (oData && oData.xiaoAnVipAccountInfo) { %>
+                <li>
+                    <div class="image-box">
+                        <img src="https://fhlui1001.58wos.com.cn/cDazYxWcDHJ/picasso/f1d774uo__w200_h152.png" alt="小安VIP">
+                    </div>
+                    <div class="combo-info">
+                        <% if (oData.xiaoAnVipAccountInfo.isBuy == 1) { %>
+                            <h3 class="title">智能小安VIP生效中</h3>
+                            <p class="sub-title">到期时间为<%= oData.xiaoAnVipAccountInfo.expireTimer%></p>
+                        <% } else if (oData.xiaoAnVipAccountInfo.isBuy == 2){ %>
+                            <h3 class="title">智能小安VIP已过期</h3>
+                            <p class="sub-title">到期时间为<%= oData.xiaoAnVipAccountInfo.expireTimer%></p>
+                        <% } else { %>
+                            <h3 class="title">您未购买智能小安VIP</h3>
+                            <p class="sub-title">开通端口后，可升级小安VIP，获客更省心</p>
+                        <% }%>
+                    </div>
+                    <div class="operate">
+                        <%if (oData.xiaoAnVipAccountInfo.byUrl) { %>
+                            <a href=<%= oData.xiaoAnVipAccountInfo.byUrl%> target="_blank">购买小安VIP</a>
+                        <% } else { %>
+                            <a href="/threenets/mix/xiaoan-marketing?from=pc_open" target="_blank">购买小安VIP</a>
+                        <% }%>
+                    </div>
+                </li>
+                <% }%>
+
+                 <!-- 畅聊包  -->
+                 <%if (oData && oData.chatComboAccountInfo) { %>
+                 <li>
+                    <div class="image-box">
+                        <img src="https://pages.anjukestatic.com/fe/esf/img/a95dfab8/n_v231f5459f3b7b4c75a1a56899fafa6ffb_scale.png" alt="畅聊包">
+                    </div>
+                    <div class="combo-info">
+                        <% if(oData.chatComboAccountInfo.allCount && oData.chatComboAccountInfo.allCount > 0) { %>
+                            <h3 class="title">生效中畅聊包<span><%= oData.chatComboAccountInfo.validAllCount %></span>个，
+                            待生效<span><%=oData.chatComboAccountInfo.futureAllCount%></span>个
+                            <% if (oData.chatComboAccountInfo.isHover == 1 && oData.chatComboAccountInfo.list.length) { %>
+                               <i class="iconfont account-chat-icon" original-title="
+                               <% $.each(oData.chatComboAccountInfo.list, function(index, item){ %>
+                                   <p class='chat-hover-text'><%=item.name%>生效中<span><%=item.validCount%></span>个，待生效<span><%=item.futureCount%></span>个</p>
+                               <% }) %>
+                               ">&#xE006;</i>
+                            <% } %>
+                            </h3>
+                            <p class="sub-title">当前生效中畅聊包最近到期时间为<%=oData.chatComboAccountInfo.nearestTime%></p>
+                        <% } else { %>
+                            <h3 class="title">您未购买畅聊包</h3>
+                            <p class="sub-title">购买畅聊包，有效期内持续获客</p>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <%if ((oData.allNetAccountInfo && oData.allNetAccountInfo.comboNum > 0 ) || (oData.wubaAccountInfo.isRelated && oData.wubaAccountInfo.comboNum > 0) || (oData.ajkAccountInfo.isRelated && oData.ajkAccountInfo.comboNum > 0)) { %>
+                            <%if (!oData.loginSource || oData.loginSource != "wbcrm") { %>
+                                <a href="/threenets/venus/connectivity-products/chat_bag_purchase__sl" target="_blank">购买畅聊包</a>
+                            <% }%>
+                        <% } else { %>
+                            <span>暂无套餐，不可购买</span>
+                        <% }%>
+                    </div>
+                </li>
+                <% } %>
+                <!-- 抢客券 -->
+                <% if (oData && oData.qkqAccountInfo) { %>
+                <li>
+                    <div class="image-box">
+                        <img src="https://pages.anjukestatic.com/fe/esf/img/6528123e/n_v290c488d20cd145b097e3f6cfbc2cbb52_scale.png" alt="抢客券">
+                    </div>
+                    <div class="combo-info">
+                        <% if(oData.qkqAccountInfo.allCount && oData.qkqAccountInfo.allCount > 0) { %>
+                            <h3 class="title">账户中剩余抢客券<span><%= oData.qkqAccountInfo.allCount %></span>张
+                               <% if (oData.qkqAccountInfo.isHover == 1) { %>
+                               <i
+                                   class="iconfont account-tickets-icon"
+                                   original-title="
+                                    <% $.each(oData.qkqAccountInfo.list, function(index, item){ %>
+                                    <p class='tickets-hover-text'>
+                                        <span><%=item.name%></span>
+                                        <span class='num'><b><%=item.count%></b>张</span>
+                                    </p>
+                                    <% }) %>">&#xE006;</i>
+                                <% } %>
+                            </h3>
+                            <p class="sub-title">当前生效中抢客券最近到期时间为<%=oData.qkqAccountInfo.nearestTime%></p>
+                        <% } else { %>
+                            <h3 class="title">您未购买抢客券</h3>
+                            <p class="sub-title">购买抢客券，坐等客户上门</p>
+                        <% } %>
+                    </div>
+                    <div class="operate">
+                        <%if ((oData.allNetAccountInfo && oData.allNetAccountInfo.comboNum > 0 ) || (oData.wubaAccountInfo.isRelated && oData.wubaAccountInfo.comboNum > 0) || (oData.ajkAccountInfo.isRelated && oData.ajkAccountInfo.comboNum > 0)) { %>
+                            <%if (!oData.loginSource || oData.loginSource != "wbcrm") { %>
+                                <a href="/threenets/venus/connectivity-products/customer_tickets_purchase__sl" target="_blank">购买抢客券</a>
+                            <% }%>
+                        <% } else { %>
+                            <span>暂无套餐，不可购买</span>
+                        <% }%>
+                    </div>
+                </li>
+                <% }%>
+
+            </ul>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="faceIdentify">
+    <div class="faceIdentify">
+        <img class="faceIdentify-title" src="//pages.anjukestatic.com/img/vip/home/faceIdentifyIcon.png" alt="补充身份认证">
+        <p class="faceIdentify-info">
+            您尚未补全身份信息或证件已过期,根据
+            <span>《中华人民共和国网络安全法》</span>
+            的监管要求,请登录移动经纪人APP进行人脸识别认证。
+        </p>
+        <p><span>平台将于近期限制身份信息过期账号的推广权限,为避免影响您后续使用,请立即人脸认证。</span></p>
+        <div class="faceIdentify-footer">
+            <a href="<%= faceIdentifyUrl %>">
+                <img class="faceIdentify-btn" src="//pages.anjukestatic.com/img/vip/home/faceIdentifyBtn.png" alt="我知道了">
+            </a>
+        </div>
+    </div>
+</script>
+<script type="text/template" id="mendianInvite">
+    <div class="storeList">
+        <div class="title">您收到了新的门店邀请，请选择一家门店加入。</div>
+        <ul>
+            <%$.each(storeList,function(key,item){%>
+            <li>
+                <p class="storeName"><%=item.storeName%></p>
+                <p class="storeList-operate-btn">
+                    <% if(isOperate){ %>
+                    <span class="accept btn" data-val="1"><a href="javascript:void(0);" data-key="<%=key%>">加入</a></span>
+                    <span class="refuse btn" data-val="2"><a href="javascript:void(0);" data-key="<%=key%>">拒绝</a></span>
+                    <% }else{ %>
+                    <span class="disabled">加入</span>
+                    <span class="disabled">拒绝</span>
+                    <% } %>
+                </p>
+            </li>
+            <%});%>
+        </ul>
+        <div class="result"><% if(result){ %> <%=result%>  <% } %></div>
+    </div>
+</script>
+
+<!-- 企业认证失效弹窗 -->
+<script type="text/template" id="companyInvalidCheck">
+    <div class="companyInvalidCheck">
+        <div class="title"><%= data.title %></div>
+        <div class="msg"><%= data.content %></div>
+        <div class="min-title">企业认证信息</div>
+        <div class="info">
+            <div class="content-item">
+                <span class="item-title">所属公司：</span>
+                 <span class="item-content"><%= data.companyName %></span>
+            </div>
+            <div class="content-item">
+                <span class="item-title">工作区域：</span>
+                 <span class="item-content"><%= data.workAddress %></span>
+            </div>
+            <div class="content-item">
+                <span class="item-title">所属门店：</span>
+                 <span class="item-content"><%= data.storeName %></span>
+            </div>
+        </div>
+        <div class="btn-box">
+            <input type="button" value="修改信息" class="ui-button ui-button-small gopage-btn">
+            <input type="button" value="确认无误" class="ui-button ui-button-positive ui-button-small close-btn">
+        </div>        
+    </div>
+</script>
+
+
+<!-- 应用服务 -->
+<script type="text/template" id="applicationcard">
+<div class="application-service">
+    <div class="head">
+        <h3 class="hd">
+            应用服务
+        </h3>
+        <a href="<%= data.hetongUrl %>" target="_blank">服务管理</a>
+    </div>
+    <div class="service-content">
+        <% if(data.exam.display){ %>
+        <div class="cell">
+            <div class="detail">
+                <div class="detail-left">
+                    <h3>资格考试刷题班</h3>
+                    <span>考点精讲、真题汇编，最佳备考资料</span>
+                </div>
+                <div class="detail-button" data-url="<%=data.exam.detailUrl %>">
+                    查看详情 >
+                </div>
+            </div>
+            <div class="description-out">
+                <div class="description">
+                    <div class="description-title">适用平台</div>
+                    <% if(data.exam.site.toString().indexOf('ajk') > -1){ %>
+                    <div class="description-tag-ajk">安居客</div>
+                    <% } %>
+                    <% if(data.exam.site.toString().indexOf('wb') > -1){ %>
+                    <div class="description-tag-wb">58同城</div>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">适用业务</div>
+                    <% if(data.exam.cate.toString().indexOf('esf') > -1) { %>
+                        <span>二手房</span>
+                    <% } %>
+                    <% if(data.exam.cate.toString().indexOf('zf') > -1){ %>
+                        <span>租房</span>
+                    <% } %>
+                    <% if(data.exam.cate.toString().indexOf('sydc') > -1){ %>
+                        <span>商业地产</span>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">开通状态</div>
+                    <span>
+                    <% if(data.exam.effect){ %>
+                        已开通
+                    <% }else{ %>
+                        未开通
+                    <% } %>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <% } %>
+        <% if(data.phoneAssistant.display){ %>
+        <div class="cell">
+            <div class="detail">
+                <div class="detail-left">
+                    <h3>接电助手</h3>
+                    <span>提升营销效率，防止同行套盘</span>
+                </div>
+                <div class="detail-button" data-url="<%=data.phoneAssistant.detailUrl %>">
+                    查看详情 >
+                </div>
+            </div>
+            <div class="description-out">
+                <div class="description">
+                    <div class="description-title">适用平台</div>
+                    <% if(data.phoneAssistant.site.toString().indexOf('ajk') > -1){ %>
+                    <div class="description-tag-ajk">安居客</div>
+                    <% } %>
+                    <% if(data.phoneAssistant.site.toString().indexOf('wb') > -1){ %>
+                    <div class="description-tag-wb">58同城</div>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">适用业务</div>
+                    <% if(data.phoneAssistant.cate.toString().indexOf('esf') > -1) { %>
+                        <span>二手房</span>
+                    <% } %>
+                    <% if(data.phoneAssistant.cate.toString().indexOf('zf') > -1){ %>
+                        <span>租房</span>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">开通状态</div>
+                    <span>
+                    <% if(data.phoneAssistant.effect){ %>
+                        已开通
+                    <% }else{ %>
+                        未开通
+                    <% } %>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <% } %>
+        <% if(data.brokerStaff.display){ %>
+        <div class="cell">
+            <div class="detail">
+                <div class="detail-left">
+                    <h3>经纪人参谋</h3>
+                    <span>全方位投放分析，全平台数据整合</span>
+                </div>
+                <div class="detail-button" data-url="<%=data.brokerStaff.detailUrl %>">
+                    查看详情 >
+                </div>
+            </div>
+            <div class="description-out">
+                <div class="description">
+                    <div class="description-title">适用平台</div>
+                    <% if(data.brokerStaff.site.toString().indexOf('ajk') > -1){ %>
+                    <div class="description-tag-ajk">安居客</div>
+                    <% } %>
+                    <% if(data.brokerStaff.site.toString().indexOf('wb') > -1){ %>
+                    <div class="description-tag-wb">58同城</div>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">适用业务</div>
+                    <% if(data.brokerStaff.cate.toString().indexOf('esf') > -1) { %>
+                        <span>二手房</span>
+                    <% } %>
+                    <% if(data.brokerStaff.cate.toString().indexOf('zf') > -1){ %>
+                        <span>租房</span>
+                    <% } %>
+                    <% if(data.brokerStaff.cate.toString().indexOf('sydc') > -1){ %>
+                        <span>商业地产</span>
+                    <% } %>
+                </div>
+                <div class="description">
+                    <div class="description-title">开通状态</div>
+                    <span>
+                    <% if(data.brokerStaff.effect){ %>
+                        已开通
+                    <% }else{ %>
+                        未开通
+                    <% } %>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <% } %>
+        <div class="other-content">
+            <div class="see-more">查看更多</div>
+            <img src="https://pic8.58cdn.com.cn/nowater/fangfe/n_v218e1068b78b4420ba2159a7529cfebab.png" alt="">
+        </div>
+    </div>
+</div>
+</script>
+
+<!-- 置顶活动弹窗 -->
+<script type="text/template" id="zdActivity">
+    <div class="activity-content">
+        <img src="//pic3.58cdn.com.cn/nowater/frs/n_v244c5d6fad218486abf780045dcf94061.png" width="433"/>
+        <img class="zd-activity-close-btn" src="//pic5.58cdn.com.cn/nowater/frs/n_v2f055c73d62f34504a39141164a4238c0.png" width="45" />
+        <a href="//wxfleugroot.58.com/activity/6284da79293f77038fa18814" target="_blank" class="know-more"></a>
+    </div>
+</script>
+
+<script>
+    var credit = 3;//用户评价分
+    var isOpenHugCity = 1;//城市区分
+</script>
+
+                </main>
+                <!-- 全量后，需要下面的样式替换Footer.css内容 -->
+<style>
+    .ui-footer {
+        color: #000;
+        padding: 32px 0 45px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .ui-footer * {
+        box-sizing: border-box;
+    }
+
+    .ui-footer .space-split {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .ui-footer a {
+        margin: 0;
+        color:rgba(0, 0, 0, 0.65);
+        font-size: 12px !important;
+    }
+
+    .ui-footer-right, .ui-footer-right a {
+        color: rgba(0, 0, 0, 0.45);
+    }
+
+    .ui-footer-link, .ui-footer-right {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .space-item-split div.separator {
+        position: relative;
+        top: -0.06em;
+        display: inline-block;
+        height: 0.9em;
+        margin: 0 8px;
+        vertical-align: middle;
+        border-top: 0;
+        border-left: 1px solid #ccc;
+    }
+</style>
+<footer class="ui-footer">
+            <div class="ui-footer-link">
+            <div class="space-split">
+                <div class="space-item">
+                    <a href="//kfzx.anjuke.com/faqList/faqList?faqTypeId=8">关于我们</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="//kfzx.anjuke.com/faqDetail/queryDetail?faqId=155&faqTypeId=10" target="_blank" rel="noreferrer">用户协议</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="//c.58cdn.com.cn/frs/_fe/broker-web-agreement/1.0/broker_platform_privacy/h5/index.html" target="_blank" rel="noreferrer">隐私政策</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="//pages.anjukestatic.com/fe/esf/img/e609d185/yyzz.pdf" target="_blank" rel="noreferrer">营业执照</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="javascript: void(0);" style="text-decoration: none; cursor: auto;">联系邮箱 service@58.com</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="javascript: void(0);" style="text-decoration: none; cursor: auto;">虚假信息举报 400-620-9008</a>
+                </div>
+                <span class="space-item-split"><div class="separator"></div></span>
+                <div class="space-item">
+                    <a href="//vip.anjuke.com/ip" target="_blank" rel="noreferrer">查看IP地址</a>
+                </div>
+            </div>
+        </div>
+    
+    <div class="ui-footer-right">
+        <div class="space-split">
+            <div class="space-item">
+                <span>Copyright © 2007-2025 www.anjuke.com All Rights Reserved</span>
+            </div>
+            <span class="space-item-split"><div role="separator"></div></span>
+            <div class="space-item">
+                <a href="//www.anjuke.com/sitemap-miibeian" target="_blank" rel="noreferrer">ICP号：沪 B2-20090008</a>
+            </div>
+        </div>
+    </div>
+</footer>
+            </section>
+        </section>
+    </section>
+
+
+
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/brokerUI/broker-ui-1.1.0.min.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/brokerUI/decimal.min.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/messenger/messenger-1.0.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/uploadify-3.1/ajaxfileupload.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/swf/uploadify-2.1.0/swfobject.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/jquery-1.3.2/jquery.uploadify.v2.1.0.min.fv9.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/jquery.pagination1.3.1.min.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/highcharts5.0.2/highcharts.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/highcharts5.0.2/highcharts-more.js"></script>
+<script type="text/javascript" crossorigin src="//pages.anjukestatic.com/js/highcharts5.0.2/solid-gauge.js"></script>
+<script type="text/javascript" crossorigin src="https://include.anjukestatic.com/broker-vip/res/10384/b/Broker_HomeV2.js"></script>
+<script type="text/javascript">
+
+;$(function(){
+    var store  = window.localforage ? localforage.createInstance({ name: 'broker-main' }) : null;
+    var BROKER_MOST_USED_MENUS = 'broker-most-used-menus';
+    var $firstLevelName = $("#first-level-name");
+    var $otherLevelMenus = $("#other-level-menus > ul");
+    var $firstLevelItems = $("#first-level-menus > ul > li");
+    var currRootMenuId = "9";
+    var timerMap = Object.create(null);
+
+    function showMenu(id) {
+        if (!id) return;
+        var selector = '[data-id="' + id + '"]';
+        $firstLevelItems.removeClass('active');
+        var $root = $firstLevelItems.filter(selector);
+        var title = $root.first().data("title");
+        var $ul = $otherLevelMenus.filter(selector);
+        var $li = $ul.children("li");
+        $otherLevelMenus.hide();
+        if ($li.length > 0) {
+            $root.addClass('active');
+            $firstLevelName.text(title);
+            $li.addClass("main-app-menu-submenu-open");
+            $li.children('ul.main-app-menu-sub').removeClass('main-app-menu-hidden');
+            // 刷新近期常用功能
+            if (id == '9') {
+                refreshMostUsedMenu()
+            }
+            $ul.show();
+        } else {
+            $firstLevelName.text('')
+        }
+    }
+
+    $("#first-level-menus > ul").on('mouseenter', 'li', function() {
+        var id = $(this).data('id');
+        timerMap[id] = setTimeout(function() {
+            showMenu(id);
+        }, 400)
+    });
+
+    $("#first-level-menus > ul").on('mouseleave', 'li', function() {
+        var id = $(this).data('id');
+        var timerId = timerMap[id];
+        if (timerId) {
+            clearTimeout(timerId);
+            timerMap[id] = 0;
+        }
+    });
+
+    $("#other-level-menus > ul").on("click", "li > div.main-app-menu-submenu-title", function(event) {
+        var $this = $(this);
+        $this.parent().toggleClass('main-app-menu-submenu-open');
+        $this.next('ul').toggleClass('main-app-menu-hidden');
+    });
+
+    $("#menu-layout").on("click", "a.link", function(event) {
+        var $this = $(this);
+        var id = $this.attr('data-id');
+        var link = $this.attr('href');
+        if (id != '9' && id.indexOf('9_') == -1 && link != '###') {
+            addMostUsedMenu(id);
+        }
+    });
+
+    $("#menu-layout").on("mouseleave", function() {
+        var $ele = $firstLevelItems.filter('li[data-id="' + currRootMenuId + '"]');
+        if ($ele.length) {
+            setTimeout(function() {
+                showMenu(currRootMenuId);
+            }, 400);
+        }
+    });
+
+    $firstLevelItems.each(function() {
+        var $this = $(this);
+        var id = $this.data('id')
+        var $ul = $otherLevelMenus.filter('[data-id="' + id + '"]');
+        var $li = $ul.children("li");
+        // 无2级菜单时，1级菜单hover显示ToolTip
+        if ($li.length === 0) {
+            $this.attr('original-title', $this.data('title'));
+            $this.tipsy({ gravity: 'w', className: 'is-menu-tipsy' });
+        }
+    });
+
+    function addMostUsedMenu(id) {
+        if (store) {
+            store.getItem(BROKER_MOST_USED_MENUS, function(err, value) {
+                var now = Date.now();
+                if (value) {
+                    var set = new Set()
+                    var menus = value
+                        .split(',')
+                        .map(function(x) {
+                            return x.split(':');
+                        })
+                        .filter(function(x) {
+                            if (set.has(x[0])) return false
+                            set.add(x[0])
+                            return id != x[0];
+                        });
+                    menus.unshift([id, now]);
+                    if (menus.length > 10) {
+                        menus = menus.splice(0, 10);
+                    }
+                    value = menus.map(function(x) { return x.join(':') }).join(',');
+                    store.setItem(BROKER_MOST_USED_MENUS, value);
+                } else {
+                    store.setItem(BROKER_MOST_USED_MENUS, id + ':' + now);
+                }
+            })
+        }
+    }
+
+    function getMostUsedItems(menuIds) {
+        var result = []
+        var set = new Set();
+        $("#menu-layout").find("a.link").each(function() {
+            var $this = $(this)
+            var id = $this.attr('data-id')
+            if (id && !set.has(id) && menuIds.indexOf(id) != -1) {
+                set.add(id);
+                result.push({
+                    menuid: id,
+                    title: $this.data('title'),
+                    link: $this.attr('href'),
+                    target: $this.attr('target')
+                });
+            }
+        })
+        return result;
+    }
+
+    function getMostUsedMenus(callback) {
+        var menuIds = []
+        if (store) {
+            store.getItem(BROKER_MOST_USED_MENUS, function(err, value) {
+                if (value) {
+                    menuIds = value.split(',').map(function(x) { return x.split(':')[0] });
+                } else {
+                    return callback([])
+                }
+                if (menuIds.length === 0) {
+                    return callback([])
+                }
+                menuIds = menuIds.splice(0, 10)
+                var menus = getMostUsedItems(menuIds);
+                // 排序
+                menus.sort(function(x, y) {
+                    return menuIds.indexOf(x.menuid) - menuIds.indexOf(y.menuid)
+                });
+                // 处理二级/三级菜单重名问题: 添加一级菜单前缀
+                $firstLevelItems.each(function() {
+                    var $this = $(this);
+                    var title = $this.data('title');
+                    var pid = $this.data('id');
+                    var prefix = pid + '_';
+                    menus.filter(function(x) {
+                        return x.menuid.indexOf(prefix) == 0 && x.title.indexOf(title) == -1
+                    })
+                    .forEach(function(x) {
+                        x.title = x.title + '-' + title;
+                    });
+                })
+
+                callback(menus);
+            })
+        }
+    }
+
+    function refreshMostUsedMenu() {
+        getMostUsedMenus(function(menus) {
+            var $container = $('#most-used-menus')
+            $container.html('');
+            if (menus.length > 0) {
+                var menuTemp = _.template($('#menu-item-template').html())({
+                    data: menus
+                });
+                $container.append(menuTemp);
+                $container.parent().show();
+            } else {
+                $container.parent().hide();
+            }
+        })
+    }
+
+    function getQuery(url) {
+        var str = (url || '').split('?')[1] || '';
+        var arr = str.split('&');
+        var obj = Object.create(null);
+        for(var i = 0; i < arr.length; i++) {
+            var brr = arr[i].split('=');
+            obj[brr[0]] = brr[1];
+        }
+        return obj;
+    }
+
+    function isCurrentPage(href) {
+        var i = (href || '').indexOf('?');
+        if (i === -1) {
+            return href === location.pathname;
+        }
+        var q1 = getQuery(href);
+        var q2 = getQuery(location.href);
+        var keys = Object.keys(q1);
+        for(var j = 0, key; j < keys.length; j++) {
+            key = keys[j];
+            if (q1[key] !== q2[key]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // 修复:
+    // 1、经纪人工作台默认未选中
+    // 2、二级菜单无选中
+    // 3、当前页面不在二级菜单时，默认展开首页
+    function checkMenuOpen() {
+        var selector = '[data-id="9"]';
+        var $menu = $otherLevelMenus.filter(':visible');
+        var hasMenu = $menu.length > 0;
+        var $home = $otherLevelMenus.filter(selector);
+        var clazz = 'main-app-menu-item-selected';
+
+        if (hasMenu) {
+            const hasSelected = $menu.find('li.' + clazz).length > 0;
+            if (hasSelected) return;
+            // 2、二级菜单无选中
+            var $a = $menu.first().find('a.link');
+            for(var i = 0; i < $a.length; i++) {
+                var $this = $($a[i]);
+                var href = $this.attr('href') || '';
+                if (isCurrentPage(href)) {
+                    var $li = $this.first().closest('li');
+                    $li.toggleClass(clazz, !$li.hasClass(clazz));
+                    return
+                }
+            }
+        } else {
+            // 3、当前页面不在二级菜单时，默认展开首页
+            $firstLevelItems.filter(selector).addClass(clazz);
+            $home.show();
+        }
+        if (location.pathname == '/user/brokerhomeV2') {
+            // 1、经纪人工作台默认未选中
+            $home.children('li').first().addClass(clazz)
+        }
+    }
+
+    checkMenuOpen();
+
+    window.onload = function() {
+        refreshMostUsedMenu();
+    }
+
+    var ro = new ResizeObserver(function(entries) {
+        var w = 0;
+        if (entries.length > 0) {
+            w = entries[0].contentRect.width;
+        }
+        $firstLevelItems.each(function() {
+            var $this = $(this);
+            var $tipsy = $this.tipsy(true);
+            if (w <= 40) {
+                $tipsy && $tipsy.enable();
+            } else {
+                $tipsy && $tipsy.disable();
+            }
+        });
+    });
+
+    ro.observe($('#first-level-menus')[0]);
+
+    // 账户情况-58现金-购买套餐 发码（NPV）
+    $('li.cash58-buycombo a').on('click.soj', function() {
+        logger && logger.sendnpv({ action: 'account_cash58_buycombo' });
+    });
+
+    // 商业地产发布-手动埋点
+    $('li.sydc-publish a').on('click', function() {
+        window.WMDA_REPORT('custom', { event_id: 6 });
+    });
+});
+
+;$(function(){
+    if (typeof ajk.NavMenuBubble === 'function') {
+        var navBubble = new ajk.NavMenuBubble({
+            bgImgPath: "//pages.anjukestatic.com/img/vip/home/XXX.png"
+        });
+    }
+
+    $('#broker_nav').children('li').on('click', function(){
+        var self = this 
+        //二级标签是否展开
+        if($(this).hasClass('ui-state-showsub')){
+            // 该以及标签下的二级标签数量
+            var second = $(this).children().find("dt").size() 
+            // 该以及标签下的三级标签数量
+            var third = $(this).children().find("dd").size() 
+            if(second > 0 && third > 0) {
+                if (typeof ajk.NavThirdMenuBubble === 'function') {
+                    var navBubble = new ajk.NavThirdMenuBubble()
+                    //待整改房源点击菜单项气泡结束
+                    if($(this).find("#2_17_11").size() === 1){
+                        $('#2_17_11').on('click', function(){
+                            navBubble.showBubble(false);
+                        })
+                    }
+                }
+            }          
+        }
+    })
+    var path = window.location.pathname
+    var $currentPath = path
+});
+
+    new ajk.Swipe({
+        actionTime:500,// 单帧动画时间
+        intervalTime:5000, //间隔时间
+        type: 1 // 同步获取数据
+    })
+
+    new ajk.HomeRightSwipe({
+        actionTime:500,// 单帧动画时间
+        intervalTime:5000, //间隔时间
+        type: 1, // 同步获取数据
+        id: 'right-banner',
+        navId: 'right-banner-nav',
+        imgWidth: '184',
+        imgHeight: '92',
+        imglist: [{"imgUrl":"https:\/\/pic1.ajkimg.com\/display\/xinform\/ebf3a7b43b11cc69348c30d4d54ea88d\/180x180.jpg.7798d1438bb0097ed0b8f1154c81bec4.jpg","target":"_blank","alt":"","linkUrl":"https:\/\/ftoy.m.58.com\/active\/1753262495481","from":"brokerhome_banner_right"}]    })
+
+    var imgUploadConfig = {
+        swfUrl: "//pages.anjukestatic.com/swf/uploadify-2.1.0/uploadify-allowdomainguowei4.swf",
+        uploader:'https://upd1.ajkimg.com/upload-anjuke',
+        redirect:'https://vip.anjuke.com/ajax/pic/uploadcallback/'
+    }
+</script>
+<script type="text/javascript">
+/**
+ * Created by cay on 18/1/18.
+ * 拦截CSRF<XSRF>（Cross-site request forgery）跨站请求伪造。
+ * 给form表单添加用户标识
+ */
+try{
+    (function(){
+        var attrs = [{
+            "name":"name",
+            "value":"43a8e21b0eb5092fd001a360626ca0fd"
+        },{
+            "name":"value",
+            "value":"f9afcd9542e299278e8e56e4536af68f"
+        }];
+
+        var formItems = document.getElementsByTagName("form");
+
+        function __createElement__(attrs){
+            var _nodeItem =document.createElement("input");
+            _nodeItem.type = "hidden";
+            for(var i = 0; i < attrs.length; i++){
+                var _att  = document.createAttribute(attrs[i]['name']);
+                _att.value = attrs[i]['value'];
+                _nodeItem.setAttributeNode(_att);
+            }
+            return _nodeItem;
+        }
+
+        for(var length = formItems.length,j = 0; j < length; j++){
+            formItems[j].appendChild(__createElement__(attrs));
+        }
+    })();
+}catch(e){
+    //do nothing
+};
+</script><script type="text/javascript" src='//pages.anjukestatic.com/soj/soj-1.1.7.js' crossorigin="anonymous"></script>
+<script type="text/javascript">
+    var logger = new soj.Logger({
+        customUrl:'https://s.anjuke.com/stb?__site=anjuke&',
+        site:'broker',
+        type: '1',
+        plat: '1',
+        page:"Broker_HomeV2Page",
+        nUid:"ajk_broker_id",
+        nGuid:"aQQ_brokerguid",
+        nCtid:'ajk_broker_ctid',
+        ep:{broker_id: soj.fun.getCookie("ajk_broker_id")}
+    });
+    logger.sendpv({
+        customparam: (window!=parent)?'iframed':null
+    });
+
+            APF.Utils.setCookie('use_new_layout', 'Y', 90, '/');
+        logger.sendnpv({action: 'broker_new_layout'});
+    </script>
+
+<script>
+    /*-------- 58wmda接入 ---------*/
+    //获取cookie
+    function getCookie(name) {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg)) return unescape(arr[2]);
+        else return null;
+    }
+
+    //是否是测试环境
+    var isTest = /test/.test(document.domain),curAppid,curKey,curProjectId;
+    var isOnline = /.com/.test(document.domain),curAppid,curKey,curProjectId;
+    if (isTest) {
+        curAppid = 8943494708657;
+        curKey = 'uqsnrtmo',
+        curProjectId = '8920780511536';
+    } else {
+        curAppid = 8943352211252;
+        curKey = 'oe3d1gd3',
+        curProjectId = '8920741036080';
+    }
+    // 北斗接入
+    if(isOnline){
+        window.Beidou && window.Beidou.init({
+            projectId: 527,
+            // 非必传， 是否将捕获的异常信息发送到北斗服务器   为true时 发送上报请求 默认为true
+            isProd: true,
+            // 非必传  是否打印日志 为true时 打印 默认为false
+            isDebug: false,  
+        });
+    }                                                                        
+    window.WMDA_SDK_CONFIG = ({
+        api_v: 1,
+        sdk_v: 0.1,
+        mode: 'report',
+        appid: curAppid,
+        key: curKey,
+        project_id: curProjectId,
+        cookie_domain: document.domain,   //58域下不需要该字段
+        cate_id: '',   //按需填写
+        page_extra: [{   //按需填写
+            key: 'brokerId',
+            value: getCookie('ajk_broker_id')
+        },{
+            key: 'cityId',
+            value: getCookie('ajk_broker_ctid')
+        }],
+        user_extra: [{   //按需填写
+            key: 'brokerId',
+            value: getCookie('ajk_broker_id')
+        },{
+            key: 'cityId',
+            value: getCookie('ajk_broker_ctid')
+        }],
+        channel: '',   //按需填写
+        getUserId: function() {}   //按需填写
+    });
+
+    var protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    var time = parseInt(new Date().getTime() / 3600000);
+    var wmda = document.createElement('script');
+    wmda.type = 'text/javascript';
+    wmda.async = true;
+    wmda.src = protocol + 'j1.58cdn.com.cn/wmda/js/statistic.js?t=' + time;
+    var head = document.head || document.getElementsByTagName('head')[0];
+    head.appendChild(wmda);
+    /*-------- 58wmda接入结束 ---------*/
+</script>
+
+<script src="//j1.58cdn.com.cn/git/_fe/ajk_all_log/index.1.1.11.js" crossorigin></script>
+<script>
+      console.log(window.AJKFELOG, 'window.AJKFELOG')
+      if (window.AJKFELOG && !window.ajklog) {
+        window.ajklog = new window.AJKFELOG.AJKLOG({
+          userId: getCookie('ajk_broker_id'),
+          ssid: getCookie('sessid'),
+          guid: getCookie('aQQ_brokerguid'),
+          immediate: true,
+          behaviorLength: 3
+        })
+        // 增加伪登陆标识
+        window.ajklog.builder.use(function (log, data) {
+          data.ep.fakeLogin = getCookie('fakeLogin')
+          return data
+        })
+      }
+</script>
+
+</body>
+</html>
